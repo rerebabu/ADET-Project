@@ -1,0 +1,160 @@
+body {
+    font-family: 'Poppins', Helvetica;
+    background: rgb(255,204,112);
+    background: linear-gradient(180deg, rgba(255,204,112,1) 0%, rgba(255,220,156,1) 24%, rgba(255,255,255,1) 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', Helvetica;
+    background: rgb(255,204,112);
+    background: linear-gradient(180deg, rgba(255,204,112,1) 0%, rgba(255,220,156,1) 24%, rgba(255,255,255,1) 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;  
+    width: 100%;  
+    height: 5rem;
+    margin-top: 0.938rem;  
+    padding: 0 1.25rem;  
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;  
+}
+
+.logoClass {
+    flex-shrink: 0; 
+}
+
+.logoClass img {
+    display: block;
+}
+
+
+.navLinks {
+    display: flex; 
+    gap: 1.25rem;  
+    justify-content: flex-end;  
+    flex-grow: 1; 
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: #22668D;
+    padding: 0.625rem;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navLinks a:hover {
+    color: white; 
+}
+
+.navLinks .loginBtn {
+    background-color: #22668D; 
+    color: white;
+    padding: 0.625rem;
+    border-radius: 0.938rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.navLinks .loginBtn:hover {
+    background-color: #003d80; 
+}
+
+.logIn{
+    margin-top: 6.5rem;
+    margin-left: 5rem;
+    color: #22668D;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+.selectionBoxes {
+    text-align: center;
+    margin-top: 2.3rem;
+    margin-right: 17.5rem;
+    margin-left: 17.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    
+}
+
+.selectionBoxes img {
+    height: 19.6rem;
+    overflow: visible;
+    display: block;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.selectionBoxes p {
+    font-size: 2.25rem;
+    font-weight: 800;
+    margin: 0;
+    padding: 0; 
+    color: #22668D;
+}
+
+.adminBox img {
+    position: relative;
+    top: -5rem;
+}
+
+.adminBox p {
+    position: absolute;
+    top: 28rem;
+    left: 22rem;
+    display: inline-block;
+    width: 8.906rem;
+    height: 4.075rem;
+}
+
+.adminBox {
+    box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    background-color: #fff;
+    width: 18.463rem;
+    height: 21.119rem;
+}
+
+
+.userBox {
+    box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    border-radius: 1.25rem;
+    background-color: #fff;
+    width: 18.463rem;
+    height: 21.119rem;
+}
+
+.userBox img {
+    position: relative;
+    top: -5rem;
+}
+
+.userBox p{
+    position: absolute;
+    top: 28rem;
+    right: 22rem;
+    display: inline-block;
+    width: 8.906rem;
+    height: 4.075rem;
+}

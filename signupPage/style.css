@@ -1,0 +1,102 @@
+body {
+    font-family: 'Poppins', Helvetica;
+    background: rgb(255,204,112);
+    background: linear-gradient(180deg, rgba(255,204,112,1) 0%, rgba(255,220,156,1) 24%, rgba(255,255,255,1) 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;  
+    width: 100%;  
+    height: 80px;
+    margin-top: 0.9rem;  
+    padding: 0 1.3rem;  
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;  
+}
+
+.logoClass {
+    flex-shrink: 0; 
+}
+
+.logoClass img {
+    display: block;
+}
+
+.signupClass {
+    color: #22668D;
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin: 12rem 0 0 5.5rem;
+}
+
+.signupForm {
+    display: flex;
+    margin: -17.3rem 0 0 5.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form input {
+    border: none;
+    padding: 1rem 1rem;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.studentNo input {
+    height: 1.2rem;
+    width: 23rem;
+    border-radius: 0.93rem;
+    box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.name {
+    margin: 1rem 0 0 0;
+}
+
+.name input {
+    height: 1.2rem;
+    width: 23rem;
+    border-radius: 0.93rem;
+    box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.password {
+    margin: 1rem 0 0 0;
+}
+
+.password input{
+    height: 1.2rem;
+    width: 23rem;
+    border-radius: 0.93rem;
+    box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+#signupBtn {
+    margin: 1rem 0 0 0;
+    background-color: #22668D;
+    height: 2.8rem;
+    width: 25rem;
+    border: none;
+    border-radius: 0.93rem;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.signupPic img{
+    height: 52rem;
+    width: 100%;
+}
