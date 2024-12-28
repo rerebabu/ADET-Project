@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="sideBar">
+        <div class="sideBar" id="sideBar">
             <div class="logoClass">
                 <img src="asset/Logo.png" alt="TalaPuso Logo">
             </div>
@@ -46,7 +46,7 @@
         </div>
         
         <!-- Main Content -->
-        <div class="mainContent">
+        <div class="mainContent" id="mainContent">
             <h1>Gallery</h1>
             <div class="tabs">
                 <button class="tab active" onclick="showCategory('cats')">cats</button>
@@ -56,29 +56,61 @@
                 <!-- Cats Content -->
                 <div class="gallery-item" data-category="cats">
                     <div class="image"></div>
-                    <div class="name">Cat 1</div>
+                    <div class="name">name</div>
                 </div>
                 <div class="gallery-item" data-category="cats">
                     <div class="image"></div>
-                    <div class="name">Cat 2</div>
+                    <div class="name">name</div>
                 </div>
                 <div class="gallery-item" data-category="cats">
                     <div class="image"></div>
-                    <div class="name">Cat 3</div>
+                    <div class="name">name</div>
+                </div>
+                <div class="gallery-item" data-category="cats">
+                    <div class="image"></div>
+                    <div class="name">name</div>
+                </div>
+                <div class="gallery-item" data-category="cats">
+                    <div class="image"></div>
+                    <div class="name">name</div>
+                </div>
+                <div class="gallery-item" data-category="cats">
+                    <div class="image"></div>
+                    <div class="name">name</div>
                 </div>
 
                 <!-- Dogs Content -->
                 <div class="gallery-item" data-category="dogs" style="display: none;">
                     <div class="image"></div>
-                    <div class="name">Dog 1</div>
+                    <div class="name">name</div>
                 </div>
                 <div class="gallery-item" data-category="dogs" style="display: none;">
                     <div class="image"></div>
-                    <div class="name">Dog 2</div>
+                    <div class="name">name</div>
                 </div>
                 <div class="gallery-item" data-category="dogs" style="display: none;">
                     <div class="image"></div>
-                    <div class="name">Dog 3</div>
+                    <div class="name">name</div>
+                </div>
+                <div class="gallery-item" data-category="dogs" style="display: none;">
+                    <div class="image"></div>
+                    <div class="name">name</div>
+                </div>
+                <div class="gallery-item" data-category="dogs" style="display: none;">
+                    <div class="image"></div>
+                    <div class="name">name</div>
+                </div>
+                <div class="gallery-item" data-category="dogs" style="display: none;">
+                    <div class="image"></div>
+                    <div class="name">name</div>
+                </div>
+                <div class="gallery-item" data-category="dogs" style="display: none;">
+                    <div class="image"></div>
+                    <div class="name">name</div>
+                </div>
+                <div class="gallery-item" data-category="dogs" style="display: none;">
+                    <div class="image"></div>
+                    <div class="name">name</div>
                 </div>
             </div>
         </div>
@@ -86,15 +118,14 @@
 
     <script>
         function showCategory(category) {
-            // Get all tabs and remove the active class
+            // Update active tab
             const tabs = document.querySelectorAll('.tab');
             tabs.forEach(tab => tab.classList.remove('active'));
 
-            // Add the active class to the clicked tab
             const activeTab = document.querySelector(`.tab[onclick="showCategory('${category}')"]`);
             activeTab.classList.add('active');
 
-            // Get all gallery items and hide them
+            // Show/hide gallery items
             const galleryItems = document.querySelectorAll('.gallery-item');
             galleryItems.forEach(item => {
                 if (item.getAttribute('data-category') === category) {
@@ -103,7 +134,21 @@
                     item.style.display = 'none'; // Hide items of other categories
                 }
             });
+
+            // Adjust sidebar height to match main content
+            adjustSidebarHeight();
         }
+
+        function adjustSidebarHeight() {
+            const sideBar = document.getElementById('sideBar');
+            const mainContent = document.getElementById('mainContent');
+            const mainContentHeight = mainContent.scrollHeight; // Full height of the content
+            sideBar.style.height = `${mainContentHeight}px`;
+        }
+
+        // Ensure the sidebar height adjusts on page load and resize
+        window.addEventListener('load', adjustSidebarHeight);
+        window.addEventListener('resize', adjustSidebarHeight);
     </script>
 </body>
 </html>

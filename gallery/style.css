@@ -7,19 +7,22 @@ body {
     height: 100vh;
 }
 
+/* Container */
 .container {
     display: flex;
-    width: 100%;
+    min-height: 100vh; /* Full viewport height */
 }
 
+/* Sidebar */
 .sideBar {
-    height: 110vh;
     width: 12rem;
     background-color: #FFDC9C;
     display: flex;
     flex-direction: column;
     padding: 1rem;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Stick the sidebar to the viewport on scroll */
+    top: 0;
 }
 
 .logoClass img {
@@ -86,7 +89,7 @@ body {
 
 /* Main Content */
 .mainContent {
-    flex: 1;
+    flex: 1; /* Allow the main content to take remaining width */
     padding: 2rem;
     background: #F9F9F9;
 }
@@ -131,8 +134,8 @@ h1 {
 /* Gallery */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr); /* Limit to 3 columns */
+    gap: 1rem;
 }
 
 .gallery-item {
@@ -146,8 +149,8 @@ h1 {
 }
 
 .gallery-item .image {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background: #FFF;
     border-radius: 0.5rem;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
