@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="asset/Logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <title>Gallery</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sideBar">
+            <div class="logoClass">
+                <img src="asset/Logo.png" alt="TalaPuso Logo">
+            </div>
+
+            <div class="profileContent">
+                <div class="imgClass"></div>
+                <div class="welcome">Welcome,</div>
+                <div class="userName">Haerin</div>
+            </div>
+
+            <div class="sidebarFunctions">
+                <a href="index.html"><button>
+                    <i class="fi fi-rr-home-heart"></i>
+                    <span>Home</span>
+                </button></a>
+                <button>
+                    <i class="fi fi-rr-file-image"></i>
+                    <span>Gallery</span>
+                </button>
+                <button>
+                    <i class="fi fi-rr-time-past"></i>
+                    <span>History</span>
+                </button>
+                <button>
+                    <i class="fi fi-rr-message-heart"></i>
+                    <span>Inbox</span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="mainContent">
+            <h1>Gallery</h1>
+            <div class="tabs">
+                <button class="tab active" onclick="showCategory('cats')">cats</button>
+                <button class="tab" onclick="showCategory('dogs')">dogs</button>
+            </div>
+            <div class="gallery" id="gallery">
+                <!-- Cats Content -->
+                <div class="gallery-item" data-category="cats">
+                    <div class="image"></div>
+                    <div class="name">Cat 1</div>
+                </div>
+                <div class="gallery-item" data-category="cats">
+                    <div class="image"></div>
+                    <div class="name">Cat 2</div>
+                </div>
+                <div class="gallery-item" data-category="cats">
+                    <div class="image"></div>
+                    <div class="name">Cat 3</div>
+                </div>
+
+                <!-- Dogs Content -->
+                <div class="gallery-item" data-category="dogs" style="display: none;">
+                    <div class="image"></div>
+                    <div class="name">Dog 1</div>
+                </div>
+                <div class="gallery-item" data-category="dogs" style="display: none;">
+                    <div class="image"></div>
+                    <div class="name">Dog 2</div>
+                </div>
+                <div class="gallery-item" data-category="dogs" style="display: none;">
+                    <div class="image"></div>
+                    <div class="name">Dog 3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showCategory(category) {
+            // Get all tabs and remove the active class
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
+
+            // Add the active class to the clicked tab
+            const activeTab = document.querySelector(`.tab[onclick="showCategory('${category}')"]`);
+            activeTab.classList.add('active');
+
+            // Get all gallery items and hide them
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            galleryItems.forEach(item => {
+                if (item.getAttribute('data-category') === category) {
+                    item.style.display = 'flex'; // Show items of the selected category
+                } else {
+                    item.style.display = 'none'; // Hide items of other categories
+                }
+            });
+        }
+    </script>
+</body>
+</html>

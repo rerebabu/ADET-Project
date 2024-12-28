@@ -1,0 +1,161 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #F9F9F9;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sideBar {
+    height: 110vh;
+    width: 12rem;
+    background-color: #FFDC9C;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.logoClass img {
+    height: 4rem;
+    margin-bottom: 2rem;
+}
+
+.profileContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+
+.imgClass {
+    background-color: grey;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.welcome, .userName {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+}
+
+.welcome {
+    margin: 1rem 0 0 0;
+}
+
+.userName {
+    margin: 0 0 1rem 0;
+}
+
+.sidebarFunctions a {
+    text-decoration: none; /* Removes the underline */
+}
+
+.sidebarFunctions button {
+    display: flex;
+    align-items: center;
+    background-color: #FFDC9C;
+    border: none;
+    padding: 0.2rem 1rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    gap: 0.5rem;;
+}
+
+.sidebarFunctions button i {
+    font-size: 1.5rem;
+}
+
+.sidebarFunctions button i {
+    font-size: 1.5rem;
+}
+
+/* Main Content */
+.mainContent {
+    flex: 1;
+    padding: 2rem;
+    background: #F9F9F9;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #345B9C;
+    margin-bottom: 1.5rem;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    gap: 1.5rem; /* Adjust the gap between tabs */
+    margin-bottom: 2rem;
+    justify-content: center; /* Center the tabs */
+}
+
+.tab {
+    width: 500px; /* Set a fixed width for wider tabs */
+    padding: 0.75rem 1rem; /* Adjust padding for better spacing */
+    border: 1px solid #CCC;
+    border-radius: 0.5rem;
+    background-color: white;
+    color: #345B9C;
+    font-weight: 600;
+    text-align: center; /* Center the text inside the tab */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Add smooth hover effects */
+}
+
+.tab.active {
+    background-color: #345B9C;
+    color: white;
+    border-color: #345B9C;
+}
+
+.tab:hover {
+    background-color: #E4E4E4; /* Slight background change on hover */
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFDC9C;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item .image {
+    width: 100px;
+    height: 100px;
+    background: #FFF;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.gallery-item .name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #345B9C;
+}
