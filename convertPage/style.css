@@ -1,0 +1,362 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #F9F9F9;
+    display: flex;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sideBar {
+    height: 110vh; 
+    width: 12rem; 
+    background-color: #FFDC9C; 
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.logoClass img {
+    height: 3.5rem;
+    display: inline-flex;
+    margin: 0 0 2rem 1rem;
+}
+
+.profileContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+
+.imgClass {
+    background-color: grey;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.welcome, .userName {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+}
+
+.welcome {
+    margin: 1rem 0 0 0;
+}
+
+.userName {
+    margin: 0 0 1rem 0;
+}
+
+.sidebarFunctions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.sidebarFunctions button {
+    display: flex;
+    align-items: center;
+    background-color: #FFDC9C;
+    border: none;
+    padding: 0.2rem 1rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    gap: 0.5rem;;
+}
+
+.sidebarFunctions button i {
+    font-size: 1.5rem;
+}
+
+.convertPage {
+    margin: 1rem 5rem 0 12rem;
+}
+
+.convertTitle {
+    display: flex;
+    flex-direction: column;  
+    margin-bottom: 1rem;
+    line-height: 1.2rem;
+    color: #22668D;
+}
+
+.ptsChoices {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: visible;
+    margin: 2rem 0 0 0;
+}
+
+.ptsChoices p{
+    color: #22668D;
+    font-weight: 600;
+    font-size: 1rem;
+    font-family: 'Poppins';
+    margin: 1.8rem 0 0 -3rem;
+}
+
+.ptsChoices img{
+    width: 12rem;
+    height: 12rem;
+    margin: -2rem 0.5rem;
+}
+
+.ptsChoices button {
+    background-color: #F9F9F9;
+    border: none;
+    cursor: pointer;
+}
+
+.vetMed {
+    width: 12rem;
+    height: 12rem;
+    background-color: #FAEACD;
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.petFood {
+    width: 12rem;
+    height: 12rem;
+    background-color: #FAEACD;
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    border-radius: 1rem;
+}
+
+.petSupplies {
+    width: 12rem;
+    height: 12rem;
+    background-color: #FAEACD;
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.orLine {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #22668D;
+    margin: 0.5rem 0 0 0;
+}
+
+.orLine hr {
+    width: 17rem;
+    height: 2px;
+    border: none;
+    background-color: #22668D;
+}
+
+.orLine p {
+    font-weight: 600;
+    color: #22668D;
+}
+
+.indivTitle {
+    margin: -1rem 0 0 0;
+    color: #22668D;
+    font-weight: 600;
+}
+
+.indivOptions {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: visible;
+    margin: 0.5rem 0 0 6rem;
+}
+
+.indivOptions img{
+    width: 12rem;
+    height: 12rem;
+    margin: -2rem 0 0 0;
+}
+
+.catOption {
+    width: 11rem;
+    height: 11rem;
+    background-color: #FAEACD;
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.dogOption {
+    width: 11rem;
+    height: 11rem;
+    background-color: #FAEACD;
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.indivOptions button {
+    background-color: #F9F9F9;
+    border: none;
+    cursor: pointer;
+}
+
+.catOverlay, .dogOverlay, .feedbackOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.catOverlayContent, .dogOverlayContent, .feedbackOverlayContent{
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    max-height: 90%;
+    overflow-y: auto;
+    position: relative;
+}
+
+.catTitle img, .dogTitle img {
+    width: 7rem;
+    height: 7rem;
+}
+
+.catTitle, .dogTitle {
+    display: flex;
+}
+
+.catTitle p, .dogTitle p{
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #22668D;
+    margin: 2rem 0 0 1rem;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 10rem; 
+    right: 16rem; 
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem; 
+    height: 1.5rem; 
+    border-radius: 50%; 
+    background-color: white;
+}
+
+.closeBtn i {
+    color: #22668D;
+    font-size: 2rem; 
+    transition: transform 0.2s ease, color 0.2s ease; 
+}
+
+.closeBtn:hover i {
+    transform: scale(1.2); 
+    color: #FF5733; 
+}
+
+.indivCatTitle, .indivDogTitle {
+    color: #22668D;
+    font-weight: 600;
+    margin: 1rem 0 0 0;
+}
+
+.catNameLists, .dogNameLists {
+    position: relative;
+    margin: 2rem 0 1rem 0;
+}
+
+.catNameLists select, .dogNameLists select {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #22668D;
+    border: 2px solid #22668D;
+    border-radius: 0.5rem;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0.15rem 0.15rem rgba(0, 0, 0, 0.25);
+    appearance: none; 
+    position: relative;
+}
+
+.catNameLists::after, .dogNameLists::after {
+    content: '▼';
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    color: #22668D;
+    font-size: 0.8rem;
+    pointer-events: none;
+}
+
+.catNameLists label, .dogNameLists label{
+    position: absolute;
+    top: -0.8rem;
+    left: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #22668D;
+    background: white; 
+    padding: 0 0.3rem;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+
+.catNameLists select:focus + label, 
+.catNameLists select:focus + label {
+    color: #1b4f6e;
+}
+
+.okBtn {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background-color: #22668D;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    height: 2rem;
+    width: 5rem; 
+    margin: 1rem 0 0 17rem;
+    cursor: pointer;
+}
+
+.feedbackTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #22668D;
+    font-weight: 600;
+}

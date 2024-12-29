@@ -17,12 +17,12 @@ a {
 }
 
 .sideBar {
-    height: 100vh; 
+    height: 110vh; 
     width: 12rem; 
     background-color: #FFDC9C; 
     display: flex;
     flex-direction: column;
-    padding: 1rem 0;
+    padding: 1rem;
 }
 
 .logoClass img {
