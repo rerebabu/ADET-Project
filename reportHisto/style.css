@@ -23,6 +23,7 @@ a {
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    position: fixed;
 }
 
 .logoClass img {
@@ -90,8 +91,9 @@ a {
 .contentWrapper {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin: 0 0 0 5rem;
+    width: calc(100% - 12rem); 
+    margin: 0 0 0 18rem; 
+    box-sizing: border-box; 
 }
 
 .reportTitleContainer {
@@ -187,4 +189,25 @@ a {
     background: #FFA500;
     width: 5rem;
     border-radius: 1rem;
+}
+
+.floatingBtnClass {
+    position: fixed;
+    bottom: 2rem;
+    right: 3rem;
+}
+
+.floatingBtn {
+    background-color: #22668D;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.4rem 0.5rem;
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+}
+
+.floatingBtn i {
+    font-size: 1.5rem;
+    color: white;
 }
