@@ -23,6 +23,7 @@ a {
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    position: fixed;
 }
 
 .logoClass img {
@@ -87,8 +88,19 @@ a {
     font-size: 1.5rem;
 }
 
+.mainContent {
+    margin-left: 12rem; /* To account for the sidebar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 12rem);
+    height: 100vh; /* Ensure it spans the full height */
+    box-sizing: border-box;
+}
+
 .convertPage {
-    margin: 1rem 5rem 0 12rem;
+    width: 100%;
+    max-width: 800px;
 }
 
 .convertTitle {
@@ -104,6 +116,7 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     overflow: visible;
     margin: 2rem 0 0 0;
 }
@@ -157,11 +170,13 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
     color: #22668D;
-    margin: 0.5rem 0 0 0;
+    margin: 1rem 0 0 0;
 }
 
 .orLine hr {
+    flex-grow: 1;
     width: 17rem;
     height: 2px;
     border: none;
@@ -184,8 +199,9 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     overflow: visible;
-    margin: 0.5rem 0 0 6rem;
+    margin: 0.5rem 0 0.5rem 0;
 }
 
 .indivOptions img{
