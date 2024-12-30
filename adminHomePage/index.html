@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="asset/Logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <title>Admin</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="sideBar">
+            <div class="logoClass">
+                <img src="asset/Logo.png" alt="TalaPuso Logo">
+            </div>
+
+            <a href="index.html">
+                <div class="profileContent">
+                    <div class="imgClass"></div>
+                    <div class="welcome">Welcome,</div>
+                    <div class="admin">Admin</div>
+                    <div class="userName">Hanni</div>
+                </div>
+            </a>
+
+            <div class="sidebarFunctions">
+                <a href="index.html"><button>
+                    <i class="fi fi-rr-home-heart"></i>
+                    <span>Home</span>
+                </button>
+                </a>
+
+                <a href="#Database"><button>
+                    <i class="fi fi-rr-database"></i>
+                    <span>Database</span>
+                </button>
+                </a>
+
+                <a href="#Notifications"><button>
+                    <i class="fi fi-rr-bell"></i>
+                    <span>Notifications</span>
+                </button>
+                </a>
+                
+                <a href="#Reports"><button>
+                    <i class="fi fi-rr-newspaper"></i>
+                    <span>Reports</span>
+                </button>
+                </a>
+
+                <a href="#Inbox"><button>
+                    <i class="fi fi-rr-message-heart"></i>
+                    <span>Inbox</span>
+                </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="mainContent">
+
+            <div class="latestSection">
+                <div class="latestTitle">
+                    <div class="titleBtn">
+                        <h2>What's Latest</h2>
+                        <button onclick="openOverlay()">See All</button>
+                    </div>
+                    <h3 class="numberNotif">2</h3>
+                </div>
+            
+                <div class="latestCards">
+                    <div class="card">
+                        <img src="asset/user1.jpg" alt="User Profile" class="userProfile">
+                        <div class="cardContent">
+                            <span class="userName">Chaewon Belmonte</span>
+                            <p>Bacon is Injured</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="asset/user2.jpg" alt="User Profile" class="userProfile">
+                        <div class="cardContent">
+                            <span class="userName">Haerin Magbanua</span>
+                            <p>Pogi is Missing!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="asset/user1.jpg" alt="User Profile" class="userProfile">
+                        <div class="cardContent">
+                            <span class="userName">Chaewon Magbanua</span>
+                            <p>Shadow is Sick</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="overlay" id="overlay">
+                <div class="overlayContent">
+                    <button class="closeBtn" onclick="closeOverlay()">Close</button>
+                    <div class="card">
+                        <img src="asset/user1.jpg" alt="User Profile" class="userProfile">
+                        <div class="cardContent">
+                            <span class="userName">Chaewon Belmonte</span>
+                            <p>Bacon is Injured</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="asset/user2.jpg" alt="User Profile" class="userProfile">
+                        <div class="cardContent">
+                            <span class="userName">Haerin Magbanua</span>
+                            <p>Pogi is Missing!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="asset/user1.jpg" alt="User Profile" class="userProfile">
+                        <div class="cardContent">
+                            <span class="userName">Chaewon Magbanua</span>
+                            <p>Shadow is Sick</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="asset/user1.jpg" alt="User Profile" class="userProfile">
+                        <div class="cardContent">
+                            <span class="userName">Chaewon Magbanua</span>
+                            <p>Shadow is Sick</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="asset/user1.jpg" alt="User Profile" class="userProfile">
+                        <div class="cardContent">
+                            <span class="userName">Chaewon Magbanua</span>
+                            <p>Shadow is Sick</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="asset/user2.jpg" alt="User Profile" class="userProfile">
+                        <div class="cardContent">
+                            <span class="userName">Haerin Magbanua</span>
+                            <p>Pogi is Missing!</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="asset/user1.jpg" alt="User Profile" class="userProfile">
+                        <div class="cardContent">
+                            <span class="userName">Chaewon Magbanua</span>
+                            <p>Shadow is Sick</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="asset/user2.jpg" alt="User Profile" class="userProfile">
+                        <div class="cardContent">
+                            <span class="userName">Haerin Magbanua</span>
+                            <p>Pogi is Missing!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="databaseClass">
+                <div class="databaseTitle">
+                    <h2>Database</h2>
+                </div>
+                <div class="databaseContent">
+                    <div class="catClass">
+                        <img src="asset/award.png" alt="Cat">
+                        <div class="catTitle">
+                            <h2 class="numberCats">30</h2>
+                            <p>cats</p>
+                        </div>
+                    </div>
+
+                    <div class="dogClass">
+                        <img src="asset/dog-food (2).png" alt="Cat">
+                        <div class="dogTitle">
+                            <h2 class="numberDogs">40</h2>
+                            <p>dogs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="notifClass">
+                <div class="notifTitle">
+                    <h2>Notifications</h2>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
