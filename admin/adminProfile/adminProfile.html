@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/ADET-Project/admin/asset/Logo.png" />
+    <link rel="stylesheet" href="adminProfilestyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css"
+    />
+    <title>TalaPuso</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sideBar">
+        <div class="logoClass">
+          <img src="/ADET-Project/admin/asset/Logo.png" alt="TalaPuso Logo" />
+        </div>
+
+        <a href="adminProfile.html">
+          <div class="profileContent">
+            <div class="imgClass"></div>
+            <div class="welcome">Welcome,</div>
+            <div class="userName">Haerin</div>
+          </div>
+        </a>
+
+        <div class="sidebarFunctions">
+          <a href="#Home"
+            ><button>
+              <i class="fi fi-rr-home-heart"></i>
+              <span>Home</span>
+            </button></a
+          >
+          <a href="#Database"
+            ><button>
+              <i class="fi fi-rr-file-image"></i>
+              <span>Database</span>
+            </button></a
+          >
+
+          <a href="#Notification"
+            ><button>
+              <i class="fi fi-rr-time-past"></i>
+              <span>Notification</span>
+            </button></a
+          >
+
+          <a href="#Reports"
+            ><button>
+              <i class="fi fi-rr-message-heart"></i>
+              <span>Reports</span>
+            </button></a
+          >
+
+          <a href="#Inbox"
+            ><button>
+              <i class="fi fi-rr-message-heart"></i>
+              <span>Inbox</span>
+            </button></a
+          >
+        </div>
+      </div>
+
+      <!-- Profile Settings Content -->
+      <div class="profileSettings">
+        <div class="profileTitle">
+          <h2 class="title">Profile</h2>
+          <button class="saveChanges">Save Changes</button>
+        </div>
+
+        <div class="profileSection">
+          <img
+            src="/ADET-Project/admin/asset/user2.jpg"
+            alt="User Profile"
+            class="userPFP"
+          />
+          <a href="#ChangeProfile"><i class="fi fi-ss-pen-circle"></i></a>
+          <div class="floatingName">
+            <input type="text" id="name" placeholder=" " />
+            <label for="name">name</label>
+          </div>
+        </div>
+
+        <div class="profileForm">
+          <div class="floatingInput">
+            <input type="text" id="username" placeholder=" " />
+            <label for="username">username</label>
+          </div>
+
+          <div class="floatingInput">
+            <input type="password" id="password" placeholder=" " />
+            <label for="password">password</label>
+          </div>
+
+          <div class="floatingInput">
+            <input type="email" id="email" placeholder=" " />
+            <label for="email">PUP email</label>
+          </div>
+
+          <div class="floatingInput">
+            <select id="gender" name="gender">
+              <option value="" disabled selected></option>
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+            </select>
+            <label for="gender">gender</label>
+          </div>
+
+          <button class="logOut">log out</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
