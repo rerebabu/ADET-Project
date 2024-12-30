@@ -1,15 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Elements
+    
     const profilePicOverlay = document.getElementById("profilePicOverlay");
     const uploadPicBtn = document.querySelector(".uploadPicBtn");
     const closeProfilePicOverlay = document.querySelector(".closeprofilePicOverlay");
 
-    // Show overlay when "Upload Picture" button is clicked
     uploadPicBtn.addEventListener("click", () => {
         profilePicOverlay.style.display = "flex";
     });
 
-    // Hide overlay when "Close" button is clicked
     closeProfilePicOverlay.addEventListener("click", () => {
         profilePicOverlay.style.display = "none";
     });
