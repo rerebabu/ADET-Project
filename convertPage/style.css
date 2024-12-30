@@ -89,12 +89,12 @@ a {
 }
 
 .mainContent {
-    margin-left: 12rem; /* To account for the sidebar */
+    margin: 1rem 0 0 12rem; 
     display: flex;
     align-items: center;
     justify-content: center;
     width: calc(100% - 12rem);
-    height: 100vh; /* Ensure it spans the full height */
+    height: 100vh; 
     box-sizing: border-box;
 }
 
