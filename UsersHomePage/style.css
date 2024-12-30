@@ -17,12 +17,13 @@ a {
 }
 
 .sideBar {
-    height: 100vh; 
+    height: 110vh; 
     width: 12rem; 
     background-color: #FFDC9C; 
     display: flex;
     flex-direction: column;
-    padding: 1rem 0;
+    padding: 1rem;
+    position: fixed;
 }
 
 .logoClass img {
@@ -80,7 +81,7 @@ a {
     font-weight: 600;
     border-radius: 0.5rem;
     cursor: pointer;
-    gap: 0.5rem;;
+    gap: 0.5rem;
 }
 
 .sidebarFunctions button i {
@@ -88,11 +89,12 @@ a {
 }
 
 .mainContent {
+    margin: 1rem 0 0 15rem; 
+    padding: 2rem;
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    padding: 2rem;
 }
 
 .ptsClass {
@@ -190,7 +192,7 @@ a {
 }
 
 .card {
-    min-width: 18rem;
+    min-width: 16rem;
     background: #FFFFFF;
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -288,7 +290,7 @@ a {
 
 .gallerySection {
     background-color: white;
-    width: 30rem;
+    width: 25rem;
     height: 12rem;
     border-radius: 1.2rem;
     margin: -2.2rem 0 0 0;
@@ -296,14 +298,15 @@ a {
 }
 
 .gallerySection img {
-    width: 15rem;
+    width: 14rem;
     align-items: center;
+    justify-content: center;
     margin: -1rem -2rem 0 0;
 }
 
 .articleSection {
     background-color: white;
-    width: 30rem;
+    width:  30rem;
     height: 12rem;
     border-radius: 1.2rem;
     margin: -2.2rem 0 0 0;

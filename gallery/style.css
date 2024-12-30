@@ -76,7 +76,7 @@ body {
     font-weight: 600;
     border-radius: 0.5rem;
     cursor: pointer;
-    gap: 0.5rem;;
+    gap: 0.5rem;
 }
 
 .sidebarFunctions button i {
@@ -116,6 +116,7 @@ h1 {
     background-color: white;
     color: #345B9C;
     font-weight: 600;
+    font-family: 'Poppins';
     text-align: center; /* Center the text inside the tab */
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s; /* Add smooth hover effects */
