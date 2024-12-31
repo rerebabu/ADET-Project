@@ -304,3 +304,68 @@ a {
     font-weight: 800;
     text-align: center;
 }
+
+.notifTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -1.2rem 0 0 0;
+}
+
+.notifTitle h2 {
+    color: #22668D;
+}
+
+.notifTitle p{
+    font-size: 1.5rem;
+    color: #C1373A;
+    font-weight: 800;
+}
+
+.notifCard {
+    display: flex;
+    align-items: center;
+    background: white; 
+    border-radius: 0.5rem; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 1rem;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.notifCard img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%; 
+    object-fit: cover;
+    margin: 0 1rem 0 0;
+}
+
+.notifCaption {
+    gap: 0.2rem;
+    line-height: 1.2;
+}
+
+.notifCaption .Name {
+    font-weight: 700; 
+    color: #22668D; 
+    font-size: 1rem;
+}
+
+.notifCaption .caseCategory {
+    font-weight: 600;
+    color: #C1373A; 
+    font-size: 1rem;
+}
+
+.notifCaption span {
+    font-weight: 400; 
+    color: #555;
+    font-size: 0.85rem;
+}
+
+.notifCaption .notifMinutes {
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: #888; 
+    margin-top: 0.5rem;
+}
