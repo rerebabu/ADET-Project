@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/ADET-Project/admin/asset/Logo.png" />
+    <link rel="stylesheet" href="adminDogDBstyle.css" />
+    <script src="adminDogDBscript.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css"
+    />
+    <title>TalaPuso</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sideBar">
+        <div class="logoClass">
+          <img src="/ADET-Project/admin/asset/Logo.png" alt="TalaPuso Logo" />
+        </div>
+
+        <a href="adminProfile.html">
+          <div class="profileContent">
+            <div class="imgClass"></div>
+            <div class="welcome">Welcome,</div>
+            <div class="userName">Haerin</div>
+          </div>
+        </a>
+
+        <div class="sidebarFunctions">
+          <a href="#Home"
+            ><button>
+              <i class="fi fi-rr-home-heart"></i>
+              <span>Home</span>
+            </button></a
+          >
+          <a href="#Database"
+            ><button>
+              <i class="fi fi-rr-file-image"></i>
+              <span>Database</span>
+            </button></a
+          >
+
+          <a href="#Notification"
+            ><button>
+              <i class="fi fi-rr-time-past"></i>
+              <span>Notification</span>
+            </button></a
+          >
+
+          <a href="#Reports"
+            ><button>
+              <i class="fi fi-rr-message-heart"></i>
+              <span>Reports</span>
+            </button></a
+          >
+
+          <a href="#Inbox"
+            ><button>
+              <i class="fi fi-rr-message-heart"></i>
+              <span>Inbox</span>
+            </button></a
+          >
+        </div>
+      </div>
+
+      <!-- Database Content-->
+      <div class="content">
+        <h2 class="title">Dog Database</h2>
+        <div class="dogList">
+          <div class="dogItem">
+            <div class="dogIcon"></div>
+            <div class="dogDetails">
+              <h3 class="dogName">Bacon</h3>
+              <p class="dogInfo">Description here...</p>
+            </div>
+          </div>
+          <div class="dogItem">
+            <div class="dogIcon"></div>
+            <div class="dogDetails">
+              <h3 class="dogName">Shadow</h3>
+              <p class="dogInfo">Description here...</p>
+            </div>
+          </div>
+        </div>
+        <button class="addButton">+</button>
+
+        <!-- Form Modal -->
+        <div class="formModal hidden">
+          <div class="formContent">
+            <h3>Add New Dog</h3>
+            <form>
+              <label for="dogName">Name:</label>
+              <input type="text" id="dogName" name="dogName" required />
+
+              <label for="dogDescription">Description:</label>
+              <textarea
+                id="dogDescription"
+                name="dogDescription"
+                required
+              ></textarea>
+
+              <div class="formActions">
+                <button type="button" id="cancelButton">Cancel</button>
+                <button type="submit">Add</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

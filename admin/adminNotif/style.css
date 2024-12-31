@@ -1,0 +1,195 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #F9F9F9;
+    display: flex;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.sideBar {
+    height: 110vh; 
+    width: 12rem; 
+    background-color: #FFDC9C; 
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    position: fixed;
+}
+
+.logoClass img {
+    height: 3.5rem;
+    margin: 0 0 2rem 1rem;
+}
+
+.profileContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.imgClass {
+    background-color: grey;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.welcome, .userName {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.admin {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.sidebarFunctions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.sidebarFunctions button {
+    display: flex;
+    align-items: center;
+    background-color: #FFDC9C;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    gap: 0.5rem;
+}
+
+.sidebarFunctions button i {
+    font-size: 1.5rem;
+}
+
+.mainContent {
+    margin: 1rem 0 0 15rem; 
+    padding: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.notifTitle {
+    display: flex;
+    align-items: center;
+    margin: -1.2rem 0 0 0;
+    color: #22668D;
+}
+
+.notifBtn {
+    margin: -1.2rem 0 1rem 0;
+}
+
+.notifBtn button {
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: #22668D;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    cursor: pointer;
+}
+
+.notifCard {
+    display: flex;
+    align-items: center;
+    background: white; 
+    border-radius: 0.5rem; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    padding: 1rem;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.notifCard img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%; 
+    object-fit: cover;
+    margin: 0 1rem 0 0;
+}
+
+.notifCaption {
+    gap: 0.2rem;
+    line-height: 1.2;
+}
+
+.notifCaption .Name {
+    font-weight: 700; 
+    color: #22668D; 
+    font-size: 1rem;
+}
+
+.notifCaption .caseCategory {
+    font-weight: 600;
+    color: #C1373A; 
+    font-size: 1rem;
+}
+
+.notifCaption span {
+    font-weight: 400; 
+    color: #555;
+    font-size: 0.85rem;
+}
+
+.notifCaption .notifMinutes {
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: #888; 
+    margin: 0.5rem 0 0 0;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-link.active {
+    background-color: #22668D;
+    color: white;
+}
+
+.notifBtn button {
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: white;
+    border: none;
+    border-radius: 0.8rem;
+    color: #22668D;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0 0 0 10px;
+}
+
+.notifBtn button:hover {
+    background-color: #ddd;
+}
