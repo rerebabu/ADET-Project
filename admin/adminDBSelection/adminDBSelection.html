@@ -2,98 +2,85 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/ADET-Project/admin/asset/Logo.png" />
-    <link rel="stylesheet" href="adminDBSelectionstyles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css"
-    />
-    <title>TalaPuso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/admin/asset/Logo.png">
+    <link rel="stylesheet" href="adminDBSelectionstyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <title>Database | Admin</title>
   </head>
   <body>
     <div class="container">
       <div class="sideBar">
         <div class="logoClass">
-          <img src="/ADET-Project/admin/asset/Logo.png" alt="TalaPuso Logo" />
+          <img src="/admin/asset/Logo.png" alt="TalaPuso Logo">
         </div>
 
-        <a href="adminProfile.html">
+        <a href="/admin/adminProfile/adminProfile.html">
           <div class="profileContent">
             <div class="imgClass"></div>
-            <div class="welcome">Welcome,</div>
-            <div class="userName">Haerin</div>
+              <div class="welcome">Welcome,</div>
+                <div class="admin">Admin</div>
+                <div class="userName">Hanni</div>
           </div>
         </a>
 
         <div class="sidebarFunctions">
-          <a href="#Home"
-            ><button>
+          <a href="index.html"><button>
               <i class="fi fi-rr-home-heart"></i>
               <span>Home</span>
-            </button></a
-          >
-          <a href="#Database"
-            ><button>
-              <i class="fi fi-rr-file-image"></i>
+          </button>
+          </a>
+
+          <a href="#Database"><button>
+              <i class="fi fi-rr-database"></i>
               <span>Database</span>
-            </button></a
-          >
+          </button>
+          </a>
 
-          <a href="#Notification"
-            ><button>
-              <i class="fi fi-rr-time-past"></i>
-              <span>Notification</span>
-            </button></a
-          >
-
-          <a href="#Reports"
-            ><button>
-              <i class="fi fi-rr-message-heart"></i>
+          <a href="#Notifications"><button>
+              <i class="fi fi-rr-bell"></i>
+              <span>Notifications</span>
+          </button>
+          </a>
+          
+          <a href="#Reports"><button>
+              <i class="fi fi-rr-newspaper"></i>
               <span>Reports</span>
-            </button></a
-          >
+          </button>
+          </a>
 
-          <a href="#Inbox"
-            ><button>
+          <a href="#Inbox"><button>
               <i class="fi fi-rr-message-heart"></i>
               <span>Inbox</span>
-            </button></a
-          >
+          </button>
+          </a>
         </div>
       </div>
 
       <!-- Database Selection Content-->
-      <div class="content">
+      <div class="mainContent">
         <div class="databaseTitle">Database</div>
+
         <div class="cardsContainer">
           <!-- Community Cats Card -->
-          <a href="/ADET-Project/admin/adminCatDB/adminCatDB.html" class="card">
-          <div class="card">
-            <img src="cat-placeholder.png" alt="Cat Icon" />
-            <h3>Meet the <span class="catText">Community Cats</span></h3> </div>
-          </div>
+          <a href="/admin/adminCatDB/adminCatDB.html">
 
-          <!-- Community Dogs Card -->
-          <a href="/ADET-Project/admin/adminDogDB/adminDogDB.html" class="card">
           <div class="card">
-            <img src="dog-placeholder.png" alt="Dog Icon" />
-            <h3>Meet the <span class="dogText">Community Dogs</span></h3> </div>
+            <img src="/admin/asset/playing.png" alt="Cat Icon">
+            <h3>Meet the <span class="catText">Community Cats</span></h3> 
           </div>
+          </a>
+          <!-- Community Dogs Card -->
+          <a href="/admin/adminDogDB/adminDogDB.html">
+          <div class="card">
+            <img src="/admin/asset/dog-house.png" alt="Dog Icon" />
+            <h3>Meet the <span class="dogText">Community Dogs</span></h3> 
+          </div>
+          </a>
+    
         </div>
       </div>
     </div>
