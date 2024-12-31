@@ -13,7 +13,7 @@ body {
 }
 
 .sideBar {
-    height: 140vh;
+    height: 115vh;
     width: 12rem;
     background-color: #FFDC9C;
     display: flex;
@@ -93,6 +93,9 @@ body {
     flex-direction: column;
     justify-content: flex-start; /* Ensures content starts from the top */
     min-height: calc(110vh - 4rem); /* Adjust based on your layout to ensure form height */
+    border-radius: 1rem; 
+    margin: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
