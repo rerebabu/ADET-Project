@@ -2,126 +2,96 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/ADET-Project/admin/asset/Logo.png" />
-    <link rel="stylesheet" href="adminCatDBstyle.css" />
-    <script src="adminCatDBscript.js" defer></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css"
-    />
-    <title>TalaPuso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/admin/asset/Logo.png">
+    <link rel="stylesheet" href="adminCatDBstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <title>Cat Database | Admin</title>
   </head>
   <body>
     <div class="container">
       <div class="sideBar">
         <div class="logoClass">
-          <img src="/ADET-Project/admin/asset/Logo.png" alt="TalaPuso Logo" />
+          <img src="/admin/asset/Logo.png" alt="TalaPuso Logo" />
         </div>
 
-        <a href="adminProfile.html">
+        <a href="/admin/adminProfile/adminProfile.html">
           <div class="profileContent">
             <div class="imgClass"></div>
-            <div class="welcome">Welcome,</div>
-            <div class="userName">Haerin</div>
+              <div class="welcome">Welcome,</div>
+                <div class="admin">Admin</div>
+                <div class="userName">Hanni</div>
           </div>
         </a>
 
         <div class="sidebarFunctions">
-          <a href="#Home"
-            ><button>
+          <a href="/adminHomePage/index.html"><button>
               <i class="fi fi-rr-home-heart"></i>
               <span>Home</span>
-            </button></a
-          >
-          <a href="#Database"
-            ><button>
-              <i class="fi fi-rr-file-image"></i>
+          </button>
+          </a>
+
+          <a href="/admin/adminDBSelection/adminDBSelection.html"><button>
+              <i class="fi fi-rr-database"></i>
               <span>Database</span>
-            </button></a
-          >
+          </button>
+          </a>
 
-          <a href="#Notification"
-            ><button>
-              <i class="fi fi-rr-time-past"></i>
-              <span>Notification</span>
-            </button></a
-          >
-
-          <a href="#Reports"
-            ><button>
-              <i class="fi fi-rr-message-heart"></i>
+          <a href="/admin/adminNotif/index.html"><button>
+              <i class="fi fi-rr-bell"></i>
+              <span>Notifications</span>
+          </button>
+          </a>
+          
+          <a href="#Reports"><button>
+              <i class="fi fi-rr-newspaper"></i>
               <span>Reports</span>
-            </button></a
-          >
+          </button>
+          </a>
 
-          <a href="#Inbox"
-            ><button>
+          <a href="/adminInboxAndChat/index.html"><button>
               <i class="fi fi-rr-message-heart"></i>
               <span>Inbox</span>
-            </button></a
-          >
+          </button>
+          </a>
         </div>
       </div>
 
       <!-- Database Content-->
       <div class="content">
         <h2 class="title">Cat Database</h2>
+
         <div class="catList">
+
+          <a href="#CatDetails">
           <div class="catItem">
             <div class="catIcon"></div>
+
             <div class="catDetails">
               <h3 class="catName">Pogi</h3>
               <p class="catInfo">Description here...</p>
             </div>
-          </div>
+          </div></a>
+
+          <a href="#CatDetails">
           <div class="catItem">
             <div class="catIcon"></div>
+
             <div class="catDetails">
               <h3 class="catName">Buchog</h3>
               <p class="catInfo">Description here...</p>
             </div>
-          </div>
+          </div></a>
         </div>
-        <button class="addButton">+</button>
 
-        <!-- Form Modal -->
-        <div class="formModal hidden">
-          <div class="formContent">
-            <h3>Add New Cat</h3>
-            <form>
-              <label for="catName">Name:</label>
-              <input type="text" id="catName" name="catName" required />
+        <a href="#NewCatInfo">
+        <button class="addButton"><i class="fi fi-br-plus"></i></button>
+        </a>
 
-              <label for="catDescription">Description:</label>
-              <textarea
-                id="catDescription"
-                name="catDescription"
-                required
-              ></textarea>
-
-              <div class="formActions">
-                <button type="button" id="cancelButton">Cancel</button>
-                <button type="submit">Add</button>
-              </div>
-            </form>
-          </div>
-        </div>
       </div>
     </div>
   </body>
