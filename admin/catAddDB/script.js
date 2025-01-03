@@ -1,8 +1,8 @@
-let isEditingBasicInfo = false; // Track whether the user is editing Basic Info
-let isEditingSpayVaccination = false; // Track whether the user is editing Spay/Neuter or Vaccination
-let currentEntry = null; // Track the entry being edited for Spay/Neuter and Vaccination
+let isEditingBasicInfo = false; 
+let isEditingSpayVaccination = false; 
+let currentEntry = null;
 
-// Function to handle Basic Information editing
+
 document.querySelector('.editInput').addEventListener('click', function () {
     const nameInput = document.getElementById('animalName');
     const breedInput = document.getElementById('animalBreed');
@@ -10,9 +10,8 @@ document.querySelector('.editInput').addEventListener('click', function () {
     const bdayInput = document.getElementById('animalBday');
     const genderInput = document.getElementById('animalGender');
 
-    // Toggle between editable fields and static display
+
     if (isEditingBasicInfo) {
-        // Save changes if editing
         const name = nameInput.value.trim();
         const breed = breedInput.value.trim();
         const age = ageInput.value.trim();
@@ -20,7 +19,6 @@ document.querySelector('.editInput').addEventListener('click', function () {
         const gender = genderInput.value.trim();
 
         if (name && breed && age && bday && gender) {
-            // Update the fields with new values
             document.querySelector('.nameClass input').value = name;
             document.querySelector('.breedRow input').value = breed;
             document.querySelector('.ageRow input').value = age;
@@ -29,10 +27,8 @@ document.querySelector('.editInput').addEventListener('click', function () {
         }
     }
 
-    // Toggle the edit mode for Basic Info
     isEditingBasicInfo = !isEditingBasicInfo;
 
-    // Enable or disable the input fields based on edit mode for Basic Info
     nameInput.disabled = !isEditingBasicInfo;
     breedInput.disabled = !isEditingBasicInfo;
     ageInput.disabled = !isEditingBasicInfo;
@@ -43,7 +39,6 @@ document.querySelector('.editInput').addEventListener('click', function () {
 
 function editEntry() {
     if (isEditingSpayVaccination && currentEntry) {
-        // Remove existing buttons to prevent duplicate actions
         const editBtn = currentEntry.querySelector('.editBtn');
         const removeBtn = currentEntry.querySelector('.removeBtn');
         editBtn.remove();
@@ -54,7 +49,7 @@ function editEntry() {
         inputFieldsWrapper.classList.add('inputFieldsWrapper');
 
         let inputFields = [];
-        let isVaccination = currentStatus.includes(' - ');  // Check if it's a vaccination entry
+        let isVaccination = currentStatus.includes(' - ');  
 
         if (isVaccination) {
             const [vaccinationType, vaccinationDate] = currentStatus.split(' - ');
@@ -105,26 +100,22 @@ function editEntry() {
             }
 
             if (updatedStatus) {
-                // Update the entry's text content
                 currentEntry.textContent = `${isVaccination ? 'Vaccination' : 'Spay/Neuter'}: ${updatedStatus}`;
 
-                // Re-attach the Edit and Remove buttons after updating
                 const editButton = document.createElement('button');
-                editButton.textContent = 'Edit';
+                editButton.textContent = 'edit';
                 editButton.classList.add('editBtn');
                 currentEntry.appendChild(editButton);
 
                 const removeButton = document.createElement('button');
-                removeButton.textContent = 'Remove';
+                removeButton.textContent = 'remove';
                 removeButton.classList.add('removeBtn');
                 currentEntry.appendChild(removeButton);
 
-                // Add event listeners to the re-added buttons
                 removeButton.addEventListener('click', function () {
-                    currentEntry.remove(); // Properly remove the entry
+                    currentEntry.remove(); 
                 });
 
-                // Remove the input fields and submit button after updating
                 inputFieldsWrapper.remove();
                 
                 isEditingSpayVaccination = false;
@@ -132,15 +123,14 @@ function editEntry() {
         });
     }
 }
-// Function to add entry (for Spay/Neuter and Vaccination)
+
 function addEntry(rowSelector, displaySelector, placeholderText, isVaccination = false) {
     document.querySelector(rowSelector).querySelector('.addBtn').addEventListener('click', function () {
-        // If we are not editing, allow adding a new entry
+        
         if (!isEditingSpayVaccination) {
             const inputFieldsWrapper = document.createElement('div');
             inputFieldsWrapper.classList.add('inputFieldsWrapper');
 
-            // Create input fields (type + date for vaccination)
             let inputFields = [];
             if (isVaccination) {
                 const vaccinationTypeField = document.createElement('input');
@@ -161,10 +151,8 @@ function addEntry(rowSelector, displaySelector, placeholderText, isVaccination =
                 inputFields.push(dateField);
             }
 
-            // Add input fields to wrapper
             inputFields.forEach(field => inputFieldsWrapper.appendChild(field));
 
-            // Create the submit button
             const submitButton = document.createElement('button');
             submitButton.textContent = 'Submit';
             submitButton.classList.add('submitBtn');
@@ -174,7 +162,6 @@ function addEntry(rowSelector, displaySelector, placeholderText, isVaccination =
             const row = document.querySelector(rowSelector);
             row.appendChild(inputFieldsWrapper);
 
-            // Submit the entry when clicked
             submitButton.addEventListener('click', function () {
                 let statusText = '';
                 
@@ -192,12 +179,10 @@ function addEntry(rowSelector, displaySelector, placeholderText, isVaccination =
                 }
 
                 if (statusText) {
-                    // Create a new status entry
                     const newEntry = document.createElement('div');
                     newEntry.classList.add('addedItem');
                     newEntry.textContent = `${placeholderText}: ${statusText}`;
 
-                    // Add edit and remove buttons to the entry
                     const editButton = document.createElement('button');
                     editButton.textContent = 'Edit';
                     editButton.classList.add('editBtn');
@@ -208,30 +193,26 @@ function addEntry(rowSelector, displaySelector, placeholderText, isVaccination =
                     removeButton.classList.add('removeBtn');
                     newEntry.appendChild(removeButton);
 
-                    // Append the new entry to the respective display section
                     document.querySelector(displaySelector).appendChild(newEntry);
 
-                    // Add event listener to edit button
                     editButton.addEventListener('click', function () {
                         isEditingSpayVaccination = true;
                         currentEntry = newEntry;
-                        editEntry(); // Activate edit mode for Spay/Neuter or Vaccination
+                        editEntry(); 
                     });
 
-                    // Add event listener to remove button
                     removeButton.addEventListener('click', function () {
                         currentEntry = newEntry;
-                        newEntry.remove(); // This will properly remove the entry
+                        newEntry.remove(); 
                     });
                 }
 
-                // Remove the input fields and submit button after submitting
                 inputFieldsWrapper.remove();
             });
         }
     });
 }
-// Initialize the addEntry function for Spay/Neuter and Vaccination Records
+
 addEntry('.spayRow', '.displaySpay', 'Spay/Neuter Status');
 addEntry('.vaccinationRow', '.displayVaccination', 'Vaccination Record', true);
 

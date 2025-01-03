@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/admin/asset/Logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <title>Cat Profile | Admin</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="sideBar">
+            <div class="logoClass">
+                <img src="/admin/asset/Logo.png" alt="TalaPuso Logo">
+            </div>
+
+            <a href="/admin/adminProfile/adminProfile.html">
+                <div class="profileContent">
+                    <div class="imgClass"></div>
+                    <div class="welcome">Welcome,</div>
+                    <div class="admin">Admin</div>
+                    <div class="userName">Hanni</div>
+                </div>
+            </a>
+
+            <div class="sidebarFunctions">
+                <a href="/adminHomePage/index.html"><button>
+                    <i class="fi fi-rr-home-heart"></i>
+                    <span>Home</span>
+                </button>
+                </a>
+
+                <a href="/admin/adminDBSelection/adminDBSelection.html"><button>
+                    <i class="fi fi-rr-database"></i>
+                    <span>Database</span>
+                </button>
+                </a>
+
+                <a href="/admin/adminNotif/index.html"><button>
+                    <i class="fi fi-rr-bell"></i>
+                    <span>Notifications</span>
+                </button>
+                </a>
+                
+                <a href="/admin/adminReport/index.html".html"><button>
+                    <i class="fi fi-rr-newspaper"></i>
+                    <span>Reports</span>
+                </button>
+                </a>
+
+                <a href="/adminInboxAndChat/index.html"><button>
+                    <i class="fi fi-rr-message-heart"></i>
+                    <span>Inbox</span>
+                </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="mainContent">
+
+            <div class="btnsClass">
+                <button id="editSaveBtn" class="editBtn" onclick="toggleEdit()">edit</button>
+                <button class="deleteBtn">delete</button>
+            </div>
+
+            <div class="upperRow">
+                <div class="profileClass">
+                    <img src="/admin/asset/Group 7.png" alt="Animal Profile">
+                    <button id="editProfilePictureBtn" class="editProfilePictureBtn" onclick="editProfilePicture()" hidden>edit</button>
+                </div>
+
+                <div class="nameClass">
+                    <label for="name">name</label>
+                    <input type="text" name="animalName" id="animalName" value="Pogi" disabled>
+                </div>
+            </div>
+
+            <div class="middleRow">
+                <div class="basicInfoTitle">
+                    <span>Basic Information</span>
+                </div>
+            
+                <hr>
+            
+                <div class="breedRow">
+                    <p>Breed</p>
+                    <input type="text" name="animalBreed" id="animalBreed">
+                </div>
+            
+                <div class="ageRow">
+                    <p>Age</p>
+                    <input type="number" name="animalAge" id="animalAge" min="0">
+                </div>
+            
+                <div class="bdayRow">
+                    <p>Birthday</p>
+                    <input type="date" name="animalBday" id="animalBday">
+                </div>
+            
+                <div class="genderRow">
+                    <p>Gender</p>
+                    <select name="animalGender" id="animalGender">
+                        <option value=""> </option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                    </select>
+                </div>
+            </div>
+            
+
+            <div class="bottomRow">
+                <div class="medHistoTitle">
+                    <span>Medical History</span>
+                </div>
+
+                <hr>
+
+                <div class="spayRow">
+                    <p>Spay/Neuter Status</p>
+                    <div class="buttonsSelect">
+                        <button class="addBtn"><i class="fi fi-br-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="displaySpay"></div>
+
+                <div class="vaccinationRow">
+                    <p>Vaccination Records</p>
+                    <div class="buttonsSelect">
+                        <button class="addBtn"><i class="fi fi-br-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="displayVaccination"></div>
+
+                <div class="reportHistoRow">
+                    <p>Report History</p>
+                </div>
+
+                <div class="displayReport"></div>
+
+            </div>
+        </div>
+
+        <div class="profilePicOverlay" id="profilePicOverlay">
+            <button class="closeprofilePicOverlay closeBtn"><i class="fi fi-ss-circle-xmark"></i></button>
+            <div class="profilePicOverlayContent">
+
+                <div class="profilePicTitle">
+                    <h2>Select Profile Picture</h2>
+                    <input type="file" name="profilePic" id="profilePic" accept="image/jpeg, image/jpg, image/png">
+                </div>
+
+                <div id="previewContainer">
+                    <img class="previewImage" id="previewImage" src="" alt="Image Preview">
+                </div>
+
+                <a href="index.html"><button class="okBtn">OK</button></a>
+
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
