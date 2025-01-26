@@ -165,10 +165,20 @@ body {
 }
 
 .chatInput input {
-    flex: 1;
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    flex: 1; 
+    padding: 1rem; 
+    font-size: 1rem;
+    border: 1px solid #ddd; /* Keep the border style */
+    border-radius: 5px; /* Keep the rounded corners */
+    height: 2rem; 
+    outline: none; /* Removes default browser-defined focus outline */
+}
+
+/* Define custom focus styles */
+.chatInput input:focus {
+    border: 1px solid #22668D; /* Blue border when focused */
+    box-shadow: 0 0 5px rgba(34, 102, 141, 0.5); /* glow effect */
+    outline: none; /* Ensures no default focus outline appears */
 }
 
 .chatInput button {
