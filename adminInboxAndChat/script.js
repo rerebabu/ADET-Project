@@ -1,7 +1,6 @@
-// Open Chatbox
 function openChat(user) {
-    document.querySelector('.chatbox').style.display = 'flex';
     document.querySelector('.inbox').style.display = 'none';
+    document.querySelector('.chatbox').style.display = 'flex';
     document.getElementById('chatUser').textContent = user;
     document.getElementById('chatMessages').innerHTML = `
         <div class="messageRow adminMessage">
@@ -13,11 +12,11 @@ function openChat(user) {
     `;
 }
 
-// Close Chatbox
 function closeChat() {
     document.querySelector('.chatbox').style.display = 'none';
-    document.querySelector('.inbox').style.display = 'block';
+    document.querySelector('.inbox').style.display = 'flex';
 }
+
 
 // Function to format the date as "Month Day, Year" (e.g., October 27, 2024)
 function getFormattedDate() {
