@@ -1,0 +1,105 @@
+body {
+  font-family: 'Poppins', Helvetica;
+  background: rgb(255,204,112);
+  background: linear-gradient(180deg, rgba(255,204,112,1) 0%, rgba(255,220,156,1) 24%, rgba(255,255,255,1) 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;  
+  width: 100%;  
+  height: 80px;
+  margin-top: 0.9rem;  
+  padding: 0 1.3rem;  
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box;  
+}
+
+.logoClass {
+  flex-shrink: 0; 
+}
+
+.logoClass img {
+  display: block;
+}
+
+
+.navLinks {
+  display: flex; 
+  gap: 1.3rem;  
+  justify-content: flex-end;  
+  flex-grow: 1; 
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #22668D;
+  padding: 0.6rem;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navLinks a:hover {
+  color: white; 
+}
+
+
+.navLinks .loginBtn {
+  background-color: #22668D; 
+  color: white;
+  padding: 0.6rem;
+  border-radius: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.navLinks .loginBtn:hover {
+  background-color: #003d80; 
+}
+
+.pageBody {
+  margin-left: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  gap: 50px;
+}
+
+.welcome, .TalaPuso, .lineOne, .lineTwo, .lineThree {
+  color: #22668D;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.welcome {
+  font-size: 3.438rem;
+}
+
+.TalaPuso {
+  font-size: 6.25rem; 
+}
+
+.lineOne, .lineTwo, .lineThree {
+  font-size: 1.25rem; 
+}
+
+.animalPic img{
+  height: 43.75rem;
+  width: auto; 
+  max-width: 100%; 
+  margin-top: 0.625rem;
+  margin-right: 3.125rem;
+}

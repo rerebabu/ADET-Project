@@ -1,0 +1,336 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #F9F9F9;
+  display: flex;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.sideBar {
+  width: 12rem;
+  background-color: #FFDC9C;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: sticky; /* Stick the sidebar to the viewport on scroll */
+  top: 0;
+}
+
+.logoClass img {
+  height: 3.5rem;
+  display: inline-flex;
+  margin: 0 0 2rem 1rem;
+}
+
+.profileContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 0 2rem 0;
+}
+
+.imgClass {
+  background-color: grey;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.welcome, .userName {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+}
+
+.welcome {
+  margin: 1rem 0 0 0;
+}
+
+/* Sidebar Username (No Color Change) */
+.userName {
+  color: white; /* Keep the sidebar username color white */
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem; /* Add this to match the second code */
+}
+
+.sidebarFunctions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* This ensures consistent spacing between items */
+}
+
+
+.sidebarFunctions a {
+  text-decoration: none; /* Removes the underline */
+  gap: 1rem;
+}
+
+.sidebarFunctions button {
+  display: flex;
+  align-items: center;
+  background-color: #FFDC9C;
+  border: none;
+  padding: 0.2rem 1rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+
+.sidebarFunctions button i {
+  font-size: 1.5rem;
+}
+
+.sidebarFunctions button i {
+  font-size: 1.5rem;
+}
+
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.inbox {
+  width: 40%;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+
+.inbox h2 {
+  margin: 1rem;
+}
+
+.messageList {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.messageItem {
+  padding: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+}
+
+.messageItem:hover {
+  background-color: #f9f9f9;
+}
+
+.chatbox {
+  flex: 1;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.chatHeader {
+  padding: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.chatMessages {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.chatInput {
+  display: flex;
+  padding: 1rem;
+  border-top: 1px solid #f0f0f0;
+  gap: 0.5rem;
+}
+
+.chatInput input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.chatInput button {
+  padding: 0.5rem 1rem;
+  background-color: #FFDC9C;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Gray Circle Placeholder */
+.grayCircle {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #ccc; /* Gray color */
+  flex-shrink: 0;
+}
+
+/* Profile Picture and Details in Inbox */
+.messageItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+}
+
+.messageItem:hover {
+  background-color: #f9f9f9;
+}
+
+.messageDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Chat Header with Gray Circle */
+.chatHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+/* Chat Messages Section */
+.chatMessages {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+/* Message Row (Admin/User) */
+.messageRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+/* Admin Message Alignment */
+.adminMessage {
+  flex-direction: row; /* Admin messages are on the left */
+}
+
+/* User Message Alignment */
+.userMessage {
+  flex-direction: row-reverse; /* User messages are on the right */
+}
+
+/* Gray Circle Placeholder for Messages */
+.messageRow .grayCircle {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #ccc;
+  flex-shrink: 0;
+}
+
+/* Message Content Styling */
+.messageContent {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  max-width: 70%;
+  word-wrap: break-word;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.userMessage .messageContent {
+  background-color: #dcf8c6; /* Light green for user messages */
+}
+
+/* Back Button */
+.backButton {
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  cursor: pointer; /* Show pointer cursor */
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+/* SVG for Rounder, Thin Arrow */
+.roundedArrow {
+  width: 24px; /* Arrow width */
+  height: 24px; /* Arrow height */
+  stroke: #22668D; /* Arrow color */
+  stroke-width: 2; /* Arrow thickness */
+  fill: none; /* No fill inside the arrow */
+  stroke-linecap: round; /* Rounded ends */
+  stroke-linejoin: round; /* Smooth corners */
+}
+
+.backButton:hover .roundedArrow {
+  stroke: #22668D; /* Darker blue on hover */
+}
+
+/* Inbox and Chatbox Usernames */
+.chatUserName {
+  font-weight: bold; /* Make it bold */
+  color: #22668D; /* Blue color */
+  font-size: 1.2rem; /* Adjust to a larger font size */
+}
+
+/* Optional hover effect for interactivity */
+.chatUserName:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Date Styling */
+/* Date Header Styling (Above Conversation) */
+.conversationDate {
+  font-size: 1rem; /* Slightly larger font size */
+  font-weight: bold;
+  color: #22668D; /* Blue color for date */
+  text-align: center; /* Center align the date */
+  margin: 1rem 0; /* Add spacing around the date */
+}
+
+/* Time Styling */
+.messageTime {
+  font-size: 0.8rem; /* Smaller font for time */
+  color: #888; /* Gray color for time */
+  margin-top: 0.3rem; /* Space between message and time */
+  text-align: right; /* Align time to the right inside the text box */
+}
+
+/* Message Content Box */
+.messageContent {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  max-width: 70%;
+  word-wrap: break-word;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.userMessage .messageContent {
+  background-color: #dcf8c6; /* Light green for user messages */
+}

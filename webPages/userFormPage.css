@@ -1,0 +1,293 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #F9F9F9;
+  display: flex;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.sideBar {
+  height: 115vh;
+  width: 12rem;
+  background-color: #FFDC9C;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.logoClass img {
+  height: 3.5rem;
+  display: inline-flex;
+  margin: 0 0 2rem 1rem;
+}
+
+.profileContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 0 2rem 0;
+}
+
+.imgClass {
+  background-color: grey;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.welcome, .userName {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+}
+
+.welcome {
+  margin: 1rem 0 0 0;
+}
+
+.userName {
+  color: white; /* Keep the sidebar username color white */
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem; /* Add this to match the second code */
+}
+
+.sidebarFunctions {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 1rem; /* Match spacing between buttons */
+}
+
+.sidebarFunctions a {
+  text-decoration: none; /* Removes the underline */
+  gap: 1rem;
+}
+
+.sidebarFunctions button {
+  display: flex;
+  align-items: center;
+  background-color: #FFDC9C;
+  border: none;
+  padding: 0.2rem 1rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+
+.sidebarFunctions button i {
+  font-size: 1.5rem; 
+}
+
+.mainContent {
+  flex: 1;
+  padding: 2rem;
+  background: none;
+  border-radius: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ensures content starts from the top */
+  min-height: calc(110vh - 4rem); /* Adjust based on your layout to ensure form height */
+  border-radius: 1rem; 
+  margin: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #345B9C;
+  margin-bottom: 1.5rem;
+}
+
+form, input, select, textarea, button {
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font to all form elements */
+  font-size: 1rem; /* Optional: adjust font size for readability */
+  color: #333; /* Optional: set a uniform text color */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-group {
+  flex: 1;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #CCC;
+  font-size: 1rem;
+  outline: none;
+  border-radius: 0.93rem;
+  box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+textarea, input[type="text"] {
+  width: 100%; /* Ensure all input boxes take up the same width */
+  padding: 0.75rem; /* Match padding for uniformity */
+  border: 1px solid #CCC;
+  font-size: 1rem;
+  height: 2.5rem; /* Match height of other input fields */
+  box-sizing: border-box; /* Include padding and border in total size */
+  outline: none;
+  border-radius: 0.93rem;
+  box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+textarea {
+  resize: none; /* Prevent resizing */
+  height: 2.5rem; /* Match height of input textboxes */
+}
+
+.upload-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.upload-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+#proofText {
+  padding-right: 5rem; /* Leave space for the upload button */
+}
+
+.upload-btn {
+  position: absolute;
+  right: 0.5rem; /* Align button inside the text box */
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #345B9C;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 0.93rem;
+  box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.button-row {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically, if needed */
+  margin-top: 1.5rem; /* Optional: Add spacing above the button */
+}
+
+button.submit-btn {
+  background-color: #345B9C;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.93rem;
+  box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #345B9C;
+  box-shadow: 0 0 5px rgba(52, 91, 156, 0.5);
+}
+
+/* Ensure all input boxes are the same width */
+.form-group select, 
+.form-group input {
+  width: calc(100% - 2px);
+  box-sizing: border-box;
+}
+
+/* Style the select element */
+select {
+  appearance: none; /* Remove default dropdown arrow */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+  background-color: white;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"%3E%3Cpath fill="%23345B9C" d="M0 2l5 5 5-5z"/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 0.65rem;
+  padding-right: 2rem; /* Leave space for the arrow */
+  border: 1px solid #CCC;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #333;
+  outline: none;
+  border-radius: 0.93rem;
+  box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+/* Add hover effect */
+select:hover {
+  border-color: #345B9C;
+}
+
+/* Add focus effect */
+select:focus {
+  border-color: #345B9C;
+  box-shadow: 0 0 5px rgba(52, 91, 156, 0.5);
+}
+
+.date-group {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.date-group input {
+  flex: 1;
+  padding-right: 2.5rem; /* Space for the calendar icon */
+  margin-right: 1rem; /* Add a gap to the right of the original input */
+}
+
+.date-group button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+}
+
+.date-group button i {
+  font-size: 1.5rem;
+  color: #345B9C;
+}
+
+#calendarInput {
+  margin-top: 1.5rem; /* Gap between the two inputs */
+}
+
+#calendarContainer input {
+  display: block;
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 0.93rem;
+  border: 1px solid #CCC;
+  outline: none;
+  box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}

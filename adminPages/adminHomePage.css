@@ -1,0 +1,371 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #F9F9F9;
+  display: flex;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.sideBar {
+  height: 110vh; 
+  width: 12rem; 
+  background-color: #FFDC9C; 
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  position: fixed;
+}
+
+.logoClass img {
+  height: 3.5rem;
+  margin: 0 0 2rem 1rem;
+}
+
+.profileContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.imgClass {
+  background-color: grey;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.welcome, .userName {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.admin {
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.sidebarFunctions {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.sidebarFunctions button {
+  display: flex;
+  align-items: center;
+  background-color: #FFDC9C;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+
+.sidebarFunctions button i {
+  font-size: 1.5rem;
+}
+
+.mainContent {
+  margin: 1rem 0 0 15rem; 
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.latestSection {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.latestTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -1.2rem 0 0 0;
+}
+
+.titleBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -1.2rem 0 0 0;
+  gap: 1rem;
+}
+
+.latestTitle h2{
+  font-size: 1.5rem;
+  color: #22668D;
+  font-weight: 800;
+}
+
+.latestTitle h3{
+  font-size: 1.5rem;
+  color: #C1373A;
+  font-weight: 800;
+}
+
+.latestTitle button {
+  background-color: #F9F9F9;
+  border: none;
+  font-size: 1.2rem;
+  color: #22668D;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.latestCards {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.overlayContent {
+  display: inline-block;
+  gap: 2rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  align-content: center;   
+}
+
+.card {
+  min-width: 17rem;
+  background: #FFFFFF;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+}
+
+.userProfile {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.cardContent .userName {
+  font-weight: 700;
+  color: #22668D;
+  font-size: 0.9rem;
+}
+
+.cardContent p {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.overlayContent {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 50%;
+  max-height: 90%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.overlayContent .card {
+  margin-bottom: 1rem;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 5px 10px;
+  background: #E24848;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.databaseContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.databaseContent img {
+  height: 13rem;
+  width: 13rem;
+  margin: 0 0 2rem 0;
+}
+
+.databaseTitle {
+  color: #22668D;
+}
+
+.catClass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 28rem;
+  height: 10rem;
+  border-radius: 1.2rem;
+  margin: 0.2rem 0 0 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  gap: 2rem;
+  overflow: visible;
+}
+
+.dogClass {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 28rem;
+  height: 10rem;
+  border-radius: 1.2rem;
+  margin: 0.2rem 1rem 0 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  gap: 2rem;
+  overflow: visible;
+}
+
+.catTitle {
+  line-height: 0rem;
+}
+
+.catTitle h2{
+  color: #FFCC70;
+  font-size: 4.5rem;
+}
+
+.catTitle p {
+  color: #22668D;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.dogTitle {
+  line-height: 0rem;
+}
+
+.dogTitle h2{
+  color: #FFCC70;
+  font-size: 4.5rem;
+}
+
+.dogTitle p {
+  color: #22668D;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.notifTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -1.2rem 0 0 0;
+}
+
+.notifTitle h2 {
+  color: #22668D;
+}
+
+.notifTitle p{
+  font-size: 1.5rem;
+  color: #C1373A;
+  font-weight: 800;
+}
+
+.notifCard {
+  display: flex;
+  align-items: center;
+  background: white; 
+  border-radius: 0.5rem; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  padding: 1rem;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.notifCard img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%; 
+  object-fit: cover;
+  margin: 0 1rem 0 0;
+}
+
+.notifCaption {
+  gap: 0.2rem;
+  line-height: 1.2;
+}
+
+.notifCaption .Name {
+  font-weight: 700; 
+  color: #22668D; 
+  font-size: 1rem;
+}
+
+.notifCaption .caseCategory {
+  font-weight: 600;
+  color: #C1373A; 
+  font-size: 1rem;
+}
+
+.notifCaption span {
+  font-weight: 400; 
+  color: #555;
+  font-size: 0.85rem;
+}
+
+.notifCaption .notifMinutes {
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #888; 
+  margin-top: 0.5rem;
+}
