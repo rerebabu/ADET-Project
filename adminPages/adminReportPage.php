@@ -80,7 +80,7 @@
 
             <div class="reportCards">
                 <div class="card">
-                    <a href="#details">
+                    <a href="adminReportDetails.php">
                         <div class="cardContent">
                             <div class="topRow">
                                 <div class="nameClass">
