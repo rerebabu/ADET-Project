@@ -27,15 +27,7 @@ include ('../webPages/connect.php');
             <a href="index.html">
                 <div class="profileContent">
                     <div class="imgClass"></div>
-                    <div class="welcome">Welcome,<?php
-                if(isset($_SESSION['username'])){
-                    $userName=$_SESSION['username'];
-                    $query=mysqli_query($conn, "SELECT * FROM `tuserinfo` WHERE tuserinfo.username='$userName'");
-                    while($row=mysqli_fetch_array($query)){
-                        echo $row['userName'];
-                    }
-                }
-                ?></div>
+                    <div class="welcome">Welcome, Admin</div>
                 <a href="logout.php">Log Out</a>
             </div>
             </a>
