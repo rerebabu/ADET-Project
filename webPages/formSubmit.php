@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('connect.php'); // Ensure this file properly connects to your database
+include('connect.php'); 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $animalType = $_POST['animalType'];
@@ -10,9 +10,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $status = $_POST['status'];
     $dateTime = date('Y-m-d H:i:s', strtotime($_POST['incidentDate']));
     $animalName = $_POST['animalName'];
-    $incidentType = $_POST['incidentType']; // Fix: No overwriting
-    $studentName = $_POST['name'];
-    $fullDesc = $_POST['description']; // Fix: Correctly storing the full description
+    $incidentType = $_POST['incidentType'];
+    $fullDesc = $_POST['description'];
+
+    // Use session-stored full name
+    $studentName = $_SESSION['fullName'];
 
     // File Upload Handling
     $proofImg = $_FILES['proof']['name'];
@@ -27,24 +29,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (move_uploaded_file($_FILES["proof"]["tmp_name"], $targetFile)) {
         $proofImg = $targetFile; // Save full path
 
-        // ✅ Corrected Query: Add studentName & fullDesc
         $query = "INSERT INTO talaForm (animalType, accidentSeverity, studentNumber, age, status, dateTime, animalName, incidentType, proofImg, studentName, fullDesc) 
                   VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
-        $stmt = mysqli_prepare($conn, $query);
-        mysqli_stmt_bind_param($stmt, "sssssssssss", $animalType, $accidentSeverity, $studentNumber, $age, $status, $dateTime, $animalName, $incidentType, $proofImg, $studentName, $fullDesc);
+        $stmt = $conn->prepare($query);
+        $stmt->bind_param("sssssssssss", $animalType, $accidentSeverity, $studentNumber, $age, $status, $dateTime, $animalName, $incidentType, $proofImg, $studentName, $fullDesc);
 
-        if (mysqli_stmt_execute($stmt)) {
+        if ($stmt->execute()) {
             echo "<script>alert('Form submitted successfully!'); window.location.href='userHomePage.php';</script>";
         } else {
-            echo "<script>alert('Database Error: " . mysqli_error($conn) . "'); window.history.back();</script>";
+            echo "<script>alert('Database Error: " . $conn->error . "'); window.history.back();</script>";
         }
-        mysqli_stmt_close($stmt);
+        $stmt->close();
     } else {
         echo "<script>alert('File upload failed!'); window.history.back();</script>";
     }
 
-    mysqli_close($conn);
+    $conn->close();
 } else {
     echo "<script>alert('Invalid request'); window.location.href='userHomePage.php';</script>";
 }
