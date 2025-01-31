@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="adminAssets/Logo.png">
-    <link rel="stylesheet" href="adminNotif.css">
+    <link rel="icon" href="../assets/adminAssets/Logo.png">
+    <link rel="stylesheet" href="../styles/adminNotif.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,10 +16,9 @@
     <div class="container">
         <div class="sideBar">
             <div class="logoClass">
-                <img src="adminAssets/Logo.png" alt="TalaPuso Logo">
+                <img src="../assets/adminAssets/Logo.png" alt="TalaPuso Logo">
             </div>
 
-            <a href="/admin/adminProfile/adminProfile.html">
                 <div class="profileContent">
                     <div class="imgClass"></div>
                     <div class="welcome">Welcome,<?php
@@ -33,7 +32,6 @@
                 ?></div>
                 <a href="../php/logout.php">Log Out</a>
             </div>
-            </a>
 
             <div class="sidebarFunctions">
                 <a href="../php/adminHomePage.php"><button>
@@ -129,7 +127,7 @@
         </div>
     </div>
 
-    <script src="adminNotif.js"></script>
+    <script src="../scripts/adminNotif.js"></script>
     
 </body>
 </html>
