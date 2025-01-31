@@ -193,3 +193,70 @@ a {
 .notifBtn button:hover {
     background-color: #ddd;
 }
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.popupContent {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #22668D;
+}
+
+.closeBtn {
+    position: absolute;
+    right: 27rem;
+    top: 10rem;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.closeBtn i {
+    color: #22668D;
+    font-size: 2rem; 
+    transition: transform 0.2s ease, color 0.2s ease; 
+}
+
+.closeBtn:hover i {
+    transform: scale(1.2); 
+    color: #FF5733; 
+}
+
+.popupActions {
+    margin-top: 15px;
+}
+
+.acceptBtn, .rejectBtn {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.acceptBtn {
+    background-color: #1E7455;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
+.rejectBtn {
+    background-color: #E24848;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}

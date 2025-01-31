@@ -114,6 +114,18 @@
                     <!-- Add more unread notifications here -->
                 </div>
 
+                <div id="popup" class="popup">
+                    <div class="popupContent">
+                        <span class="closeBtn"><i class="fi fi-ss-circle-xmark"></i></span>
+                        <h2>New Report!</h2>
+                        <p id="reportDetails">User reported a case.</p>
+                        <div class="popupActions">
+                            <button class="acceptBtn">accept</button>
+                            <button class="rejectBtn">reject</button>
+                        </div>
+                    </div>
+                </div>
+
         </div>
     </div>
 
