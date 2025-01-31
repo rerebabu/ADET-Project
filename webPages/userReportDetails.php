@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/admin/asset/Logo.png">
+    <link rel="icon" href="userHomePageAssets/Logo.png">
     <link rel="stylesheet" href="userReportDetails.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
     <div class="container">
         <div class="sideBar">
             <div class="logoClass">
-                <img src="/webPages/userHomePageAssets/Logo.png" alt="TalaPuso Logo">
+                <img src="userHomePageAssets/Logo.png" alt="TalaPuso Logo">
             </div>
 
             <div class="profileContent">
