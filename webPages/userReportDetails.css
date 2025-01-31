@@ -1,0 +1,232 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #F9F9F9;
+    display: flex;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.sideBar {
+    height: 110vh; 
+    width: 12rem; 
+    background-color: #FFDC9C; 
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    position: fixed;
+}
+
+.logoClass img {
+    height: 3.5rem;
+    margin: 0 0 2rem 1rem;
+}
+
+.profileContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.imgClass {
+    background-color: grey;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.welcome, .userName {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.sidebarFunctions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.sidebarFunctions button {
+    display: flex;
+    align-items: center;
+    background-color: #FFDC9C;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    gap: 0.5rem;
+}
+
+.sidebarFunctions button i {
+    font-size: 1.5rem;
+}
+
+.mainContent {
+    margin: 1rem 0 0 15rem; 
+    padding: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.reportTitle {
+    display: flex;
+    gap: 0.8rem;
+    background-color: #FFDC9C;
+    padding: 0.5rem 0.3rem;
+    border-radius: 0.5rem;
+}
+
+.reportTitle i {
+    font-size: 1.5rem;
+    color: #22668D;
+    margin: 0 0 0 1rem
+}
+
+.reportTitle span {
+    color: #22668D;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.statusDiv {
+    display: flex;
+    justify-content: right;
+}
+
+.statusDiv select {
+    background-color: #8A9A5B;
+    font-size: 1rem;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.3rem;
+}
+
+.upperDiv, .middleDiv, .bottomDiv{
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 0.8rem 0.8rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.userClass {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.userClass img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.Name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #22668D;
+}
+
+.dateTimePost {
+    color: rgba(0, 0, 0, 0.733);
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin: -0.5rem 0 0 4rem;
+}
+
+.upperDiv hr {
+    background-color: #22668D;
+    height: 0.1rem;
+}
+
+.studentNoRow, .ageRow, .statusRow, .animalRow, .animalNameRow, 
+.animalDesRow, .severityRow, .incidentRow, .dateTimeRow, .photoRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 0rem;
+}
+
+.studentNoRow p, .ageRow p, .statusRow p, .animalRow p, .animalNameRow p,
+.animalDesRow p, .severityRow p, .incidentRow p, .dateTimeRow p, .photoRow p{
+    font-size: 0.9rem;
+}
+
+.studentNoRow span, .ageRow span, .statusRow span, .animalNameRow span,
+.animalDesRow span, .dateTimeRow span{
+    font-size: 0.9rem;
+    color: #898686;
+}
+
+.animalRow .dog {
+    background-color: #22668D;
+    padding: 0.8rem 0.8rem;
+    color: white;
+    font-weight: 600;
+    border-radius: 1rem;
+}
+
+.animalRow .cat {
+    background-color: #FFCC70;
+    padding: 0.8rem 0.8rem;
+    color: white;
+    font-weight: 600;
+    border-radius: 1rem;
+}
+
+.severityRow .severe {
+    background-color: #711616;
+    padding: 0.8rem 0.8rem;
+    color: white;
+    font-weight: 600;
+    border-radius: 1rem;
+}
+
+.incidentRow .injury {
+    background-color: #FFA500;
+    padding: 0.8rem 0.8rem;
+    color: white;
+    font-weight: 600;
+    border-radius: 1rem;
+}
+
+.photoRow button {
+    background-color: #FFCC70;
+    padding: 0.5rem 0.5rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.statusDiv .pending {
+    background-color: #1E7455;
+    padding: 0.5rem 0.5rem;
+    font-weight: 600;
+    border-radius: 1.2rem;
+    color: white;
+}
