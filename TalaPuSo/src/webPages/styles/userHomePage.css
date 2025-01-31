@@ -288,16 +288,18 @@ a {
 
 .galleryArticleSec {
   display: flex;
-  justify-content: space-between;
+  gap: 2rem; 
+  align-items: flex-start;
 }
 
 .gallerySection {
   background-color: white;
-  width: 25rem;
+  width: 45%;
   height: 12rem;
   border-radius: 1.2rem;
   margin: -2.2rem 0 0 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
 }
 
 .gallerySection img {
@@ -334,7 +336,7 @@ a {
 .articleSection {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .articleCard {
@@ -344,6 +346,9 @@ a {
   padding: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
+  width: 55%;
+  margin: -1.8rem 0 1rem 0; 
+  width: 100%
 }
 
 .articleCard:hover {

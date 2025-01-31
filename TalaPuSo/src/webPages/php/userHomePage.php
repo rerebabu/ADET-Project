@@ -28,7 +28,7 @@
     <div class="container">
         <div class="sideBar">
             <div class="logoClass">
-                <img src="userHomePageAssets/Logo.png" alt="TalaPuso Logo">
+                <img src="../assets/userHomePageAssets/Logo.png" alt="TalaPuso Logo">
             </div>
 
             <a href="../php/userProfile.php">
@@ -65,7 +65,7 @@
                     <span class="ptsTally">0.00</span>
                     <span class="pts">pts</span>
                 </div>
-                <a href="../assets/convertPage.php">
+                <a href="../php/convertPage.php">
                 <button class="convertBtn">
                         <i class="fi fi-rr-arrows-repeat"></i>
                         <span>Convert</span>
