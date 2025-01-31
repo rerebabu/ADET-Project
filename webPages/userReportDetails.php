@@ -17,7 +17,7 @@
     <div class="container">
         <div class="sideBar">
             <div class="logoClass">
-                <img src="/admin/asset/Logo.png" alt="TalaPuso Logo">
+                <img src="/webPages/userHomePageAssets/Logo.png" alt="TalaPuso Logo">
             </div>
 
             <div class="profileContent">
@@ -27,29 +27,29 @@
             </div>
 
             <div class="sidebarFunctions">
-                <a href="index.html"><button>
+                <a href="userHomePage.php"><button>
                     <i class="fi fi-rr-home-heart"></i>
                     <span>Home</span>
                 </button></a>
-                <a href="/gallery/index.html"><button>
+                <a href="animalGallery.php"><button>
                     <i class="fi fi-rr-file-image"></i>
                     <span>Gallery</span>
                 </button></a>
-                <a href="/reportHisto/index.html"><button>
+                <a href="reportHistory.php"><button>
                     <i class="fi fi-rr-time-past"></i>
                     <span>History</span>
                 </button></a>
-                <button>
+                <a href="userInbox.php"><button>
                     <i class="fi fi-rr-message-heart"></i>
                     <span>Inbox</span>
-                </button>
+                </button></a>
             </div>
         </div>
     
         <div class="mainContent">
 
             <div class="reportTitle">
-                <a href="/admin/adminReport/index.html"><i class="fi fi-br-angle-left"></i></a>
+                <a href="adminReportPage.php"><i class="fi fi-br-angle-left"></i></a>
                 <div class="nameTitle">
                     <span class="firstName">Chaewon</span>
                     <span>'s</span>
