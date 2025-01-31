@@ -20,7 +20,7 @@ if(isset($_POST['signUp'])){
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
     // Check if username already exists
-    $checkUser = "SELECT * FROM tuserinfo WHERE username = ?";
+    $checkUser = "SELECT * FROM tuserinfo WHERE userName = ?";
     $stmt = $conn->prepare($checkUser);
     $stmt->bind_param("s", $userName);
     $stmt->execute();
@@ -29,7 +29,7 @@ if(isset($_POST['signUp'])){
     if($result->num_rows > 0){
         echo "Username already exists!";
     } else {
-        $insertQuery = "INSERT INTO tuserinfo (fullname, username, password) VALUES (?, ?, ?)";
+        $insertQuery = "INSERT INTO tuserinfo (fullName, userName, password) VALUES (?, ?, ?)";
         $stmt = $conn->prepare($insertQuery);
         $stmt->bind_param("sss", $fullName, $userName, $hashedPassword);
         
@@ -55,12 +55,12 @@ if(isset($_POST['login'])){
     // Admin login check
     if($userName === "TalaAdmin" && $password === "PUPSintangPusa2025"){
         $_SESSION['username'] = $userName;
-        header("Location: /ADETFinal/adminPages/adminHomePage.php"); // Redirect admin
+        header("Location: /ADETFinal/adminPages/adminHomePage.php");
         exit();
     }
 
     // Normal user login check
-    $sql = "SELECT * FROM tuserinfo WHERE username = ?";
+    $sql = "SELECT * FROM tuserinfo WHERE userName = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("s", $userName);
     $stmt->execute();
@@ -68,16 +68,17 @@ if(isset($_POST['login'])){
 
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
-    
+        
+        echo "<pre>";
+        print_r($row); // Debugging output
+        echo "</pre>";
+        
         if (password_verify($password, $row['password'])) {
-            if (isset($row['userName'])) { // Use the correct column name
-                $_SESSION['username'] = $row['userName'];  // Store username in session
-                echo "Logged in as: " . $_SESSION['username']; // Debugging
-                header("Location: userHomePage.php");
-                exit();
-            } else {
-                echo "Error: Username not found in database.";
-            }
+            $_SESSION['username'] = $row['userName'];  
+            $_SESSION['fullName'] = $row['fullName'];  // Ensure this is stored
+    
+            header("Location: userHomePage.php");
+            exit();
         } else {
             echo "Incorrect Username or Password, please try again.";
         }
