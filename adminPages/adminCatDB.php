@@ -95,8 +95,8 @@
           </div></a>
         </div>
 
-        <a href="#NewCatInfo">
-        <button class="addButton"><i class="fi fi-br-plus"></i></button>
+        <a href="addCat.php">
+        <button class="addButton"><i class="fi fi-br-plus"></i>Add a Cat</button>
         </a>
 
       </div>
