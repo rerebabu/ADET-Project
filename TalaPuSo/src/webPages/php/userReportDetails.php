@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="userHomePageAssets/Logo.png">
-    <link rel="stylesheet" href="userReportDetails.css">
+    <link rel="icon" href="../assets/userHomePageAssets/Logo.png">
+    <link rel="stylesheet" href="../styles/userReportDetails.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
     <div class="container">
         <div class="sideBar">
             <div class="logoClass">
-                <img src="userHomePageAssets/Logo.png" alt="TalaPuso Logo">
+                <img src="../assets/userHomePageAssets/Logo.png" alt="TalaPuso Logo">
             </div>
 
             <div class="profileContent">
@@ -27,19 +27,19 @@
             </div>
 
             <div class="sidebarFunctions">
-                <a href="userHomePage.php"><button>
+                <a href="../php/userHomePage.php"><button>
                     <i class="fi fi-rr-home-heart"></i>
                     <span>Home</span>
                 </button></a>
-                <a href="animalGallery.php"><button>
+                <a href="../php/animalGallery.php"><button>
                     <i class="fi fi-rr-file-image"></i>
                     <span>Gallery</span>
                 </button></a>
-                <a href="reportHistory.php"><button>
+                <a href="../php/reportHistory.php"><button>
                     <i class="fi fi-rr-time-past"></i>
                     <span>History</span>
                 </button></a>
-                <a href="userInbox.php"><button>
+                <a href="../php/userInbox.php"><button>
                     <i class="fi fi-rr-message-heart"></i>
                     <span>Inbox</span>
                 </button></a>
@@ -49,7 +49,7 @@
         <div class="mainContent">
 
             <div class="reportTitle">
-                <a href="adminReportPage.php"><i class="fi fi-br-angle-left"></i></a>
+                <a href="../php/userHomePage.php"><i class="fi fi-br-angle-left"></i></a>
                 <div class="nameTitle">
                     <span class="firstName">Chaewon</span>
                     <span>'s</span>
@@ -63,7 +63,7 @@
 
             <div class="upperDiv">
                 <div class="userClass">
-                    <img src="userHomePageAssets/user1.jpg" alt="User Profile" id="userProfile">
+                    <img src="../assets/userHomePageAssets/user1.jpg" alt="User Profile" id="userProfile">
                     <span class="Name">Chaewon Belmonte</span>
                 </div>
                 <p class="dateTimePost">January 2, 2025 11:59 PM</p>
@@ -127,7 +127,7 @@
         </div>
     </div>
 
-    <script src="userReportDetails.js"></script>
+    <script src="../scripts/userReportDetails.js"></script>
     
 </body>
 </html>

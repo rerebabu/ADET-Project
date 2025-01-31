@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="LandingPageAssets/Logo.png">
-    <link rel="stylesheet" href="landingPage.css">
+    <link rel="icon" href="../assets/LandingPageAssets/Logo.png">
+    <link rel="stylesheet" href="../styles/landingPage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
 <body>
     <div class="navBar">
         <div class="logoClass">
-            <img src="LandingPageAssets/Logo.png" alt="TalaPuso Logo">
+            <img src="../assets/LandingPageAssets/Logo.png" alt="TalaPuso Logo">
         </div>
         <div class="navLinks">
             <a href="#contact">contact us</a>
@@ -49,7 +49,7 @@
         </div>
 
         <div class="animalPic">
-            <img src="LandingPageAssets/landingPage.png" alt="Cats and Dogs">
+            <img src="../assets/LandingPageAssets/landingPage.png" alt="Cats and Dogs">
         </div>
 
     </div>
