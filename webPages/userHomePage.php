@@ -187,9 +187,8 @@
         </div>
     </div>
     
-    <a href="userFormPage.php" class="floating-btn">
-    <i class="fi fi-rr-plus"></i>
-</a>            
+    <a href="userFormPage.php" class="floating-btn">Add Report</a>
+
     <script src="userHomePage.js"></script>
 </body>
 </html>

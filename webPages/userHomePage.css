@@ -317,22 +317,26 @@ a {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #22668D;
-  color: #ffffff;
-  border: none;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 28px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  background-color: #345B9C; /* Matching upload button */
+  color: white;
+  font-size: 14px; /* Smaller text */
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 20px; /* Rounded edges but not a circle */
   text-decoration: none;
-  transition: 0.3s;
-  z-index: 1000; /* Ensures it's above other elements */
+  cursor: pointer;
+  border: none;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px; /* Wider for text */
+  height: 45px; /* Adjust height */
+  text-align: center;
+  white-space: nowrap; /* Prevent text wrapping */
 }
 
 .floating-btn:hover {
-  background-color: #e0484e;
+  background-color: #264A7F; /* Slightly darker on hover */
 }
