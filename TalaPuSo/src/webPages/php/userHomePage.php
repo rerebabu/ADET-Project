@@ -28,10 +28,10 @@
     <div class="container">
         <div class="sideBar">
             <div class="logoClass">
-                <img src="../assets/userHomePageAssets/Logo.png" alt="TalaPuso Logo">
+                <img src="userHomePageAssets/Logo.png" alt="TalaPuso Logo">
             </div>
 
-            <a href="userProfile.php">
+            <a href="../php/userProfile.php">
             <div class="profileContent">
                 <div class="welcome">Welcome, <?php echo htmlspecialchars($userName); ?></div>
                 <a href="../php/logout.php">Log Out</a>
@@ -61,11 +61,11 @@
 
             <div class="ptsClass">
                 <div class="ptsContent">
-                    <img src="..assets/userHomePageAssets/PawPts.png" alt="Paw">
+                    <img src="../assets/userHomePageAssets/PawPts.png" alt="Paw">
                     <span class="ptsTally">0.00</span>
                     <span class="pts">pts</span>
                 </div>
-                <a href="../php/convertPage.php">
+                <a href="../assets/convertPage.php">
                 <button class="convertBtn">
                         <i class="fi fi-rr-arrows-repeat"></i>
                         <span>Convert</span>
@@ -179,17 +179,42 @@
                 </div>
 
                 <div class="articleSection">
-                    <!--Links of Articles-->
+                 <!--Links of Articles-->
+                 <div class="articleCard">
+                        <h3>Adopt, Don’t Shop: Why It Matters</h3>
+                        <p>This article explores the importance of adopting pets from shelters and why it’s a more ethical choice.</p>
+                        <a href="https://manilastandard.net/?p=314393363" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        class="readMoreBtn">
+                            Read More
+                        </a>
+                    </div>
+
+                    <!-- Second Article -->
+                    <div class="articleCard">
+                        <h3>Advocating Animal Welfare</h3>
+                        <p>A deeper look into how advocacy groups are championing the rights and well-being of animals.</p>
+                        <a href="https://www.philstar.com/business/2024/07/11/2369209/advocating-animal-welfare" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        class="readMoreBtn">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+                   
                 </div>
             </div>
-
+        </div>
 
         </div>
     </div>
     
-    <a href="../php/userFormPage.php" class="floating-btn">
+    <a href="userFormPage.php" class="floating-btn">
     <i class="fi fi-rr-plus"></i>
-</a>            
-    <script src="../scripts/userHomePage.js"></script>
+</a>  
+
+    <script src="/script/userHomePage.js"></script>
 </body>
 </html>
