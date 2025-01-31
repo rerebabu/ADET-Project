@@ -76,7 +76,7 @@ a {
   background-color: #FFDC9C;
   border: none;
   padding: 0.2rem 1rem;
-  color: white;
+  color: #22668D;
   font-size: 1.2rem;
   font-weight: 600;
   border-radius: 0.5rem;
@@ -86,6 +86,11 @@ a {
 
 .sidebarFunctions button i {
   font-size: 1.5rem;
+  color: #22668D;
+}
+
+.sidebarFunctions :hover{
+  color: white;
 }
 
 .contentWrapper {
