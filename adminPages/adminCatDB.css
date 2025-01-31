@@ -73,7 +73,7 @@ a {
   align-items: center;
   background-color: #FFDC9C;
   border: none;
-  color: white;
+  color: #22668D;
   font-size: 1.2rem;
   font-weight: 600;
   border-radius: 0.5rem;
@@ -83,6 +83,11 @@ a {
 
 .sidebarFunctions button i {
   font-size: 1.5rem;
+  color: #22668D;
+}
+
+.sidebarFunctions :hover{
+  color: white;
 }
 
 .content {
