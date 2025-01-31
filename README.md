@@ -1,4 +1,5 @@
 # ADET-Project
-This is the initial repository for the COMP 019 ADET Project
+TalaPuSo: PUP Campus Animal Incident Reporting Management System
 
-Hi this is a blank README file
+Overview
+TalaPuSo is a web application designed to streamline the reporting and management of animal-related incidents within the Polytechnic University of the Philippines (PUP) campus. By centralizing incident reporting and providing tools for animal welfare management, TalaPuSo empowers the PUP community to take an active role in ensuring the well-being of campus animals.
