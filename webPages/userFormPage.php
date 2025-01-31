@@ -1,7 +1,31 @@
 <?php
-    session_start();
-    include('connect.php')
+session_start();
+include('connect.php');
+
+if (!isset($_SESSION['username'])) {
+    header("Location: signlogpage.php");
+    exit();
+}
+
+// If fullName is missing, try to fetch it from the database again
+if (!isset($_SESSION['fullName'])) {
+    $username = $_SESSION['username'];
+    $sql = "SELECT fullName FROM tuserinfo WHERE userName = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    
+    if ($row = $result->fetch_assoc()) {
+        $_SESSION['fullName'] = $row['fullName']; // ✅ Restore full name to session
+    }
+    $stmt->close();
+}
+
+// Now fullName should be available
+$fullName = $_SESSION['fullName'] ?? "Not Available";
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -82,8 +106,8 @@
                 </div>
 
                 <div class="form-group">
-                    <input type="text" id="name" name="name" placeholder="Name" required>
-                </div>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" value="<?php echo htmlspecialchars($fullName); ?>" readonly>
 
                 <div class="form-group">
                     <input type="text" id="studentId" name="studentId" placeholder="Student ID Number" required>
@@ -121,24 +145,24 @@
                 </div>
 
                 <div class="form-group">
-                    <select id="incidentType" name="incidentType" placeholder="Type of Incident" required>
+                <select id="incidentType" name="incidentType" placeholder="Type of Incident" required>
                     <option value="">Type Of Incident</option>
                             <option value="injury">Injury</option>
                             <option value="lost">Lost</option>
                             <option value="Animal Cruelty">Animal Cruelty</option>
                             <option value="scratch or bite">Scratch/Bite</option>
+                </select>
                 </div>
 
                 <div class="form-group upload-container">
-                    <div class="upload-wrapper">
-                        <button type="button" class="upload-btn" onclick="triggerFileInput()">Upload Proof of Incident</button>
-                        <input type="file" id="proof" name="proof" hidden onchange="updateProofText()">
-                    </div>
-                </div>
+                <div class="form-actions">
+                    <button type="button" class="upload-btn" onclick="triggerFileInput()">Upload Proof of Incident</button>
+                         <input type="file" id="proof" name="proof" hidden onchange="updateProofText()">
+                            </div>
 
-                <div class="button-row">
-                    <button type="submit" class="submit-btn">submit</button>
-                </div>
+                            <div class="submit-container">
+                            <button type="submit" class="submit-btn">Submit</button>
+                            </div>
             </form>
         </div>
     </div>
