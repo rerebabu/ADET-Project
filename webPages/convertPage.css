@@ -141,9 +141,16 @@ a {
   cursor: pointer;
 }
 
+.ptsChoices span {
+  color: #E24848;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
 .vetMed {
   width: 12rem;
-  height: 12rem;
+  height: 13rem;
   background-color: #FAEACD;
   margin: 0.5rem 0.5rem 0 0.5rem;
   border-radius: 0.5rem;
@@ -151,7 +158,7 @@ a {
 
 .petFood {
   width: 12rem;
-  height: 12rem;
+  height: 13rem;
   background-color: #FAEACD;
   margin: 0.5rem 0.5rem 0 0.5rem;
   border-radius: 1rem;
@@ -159,7 +166,7 @@ a {
 
 .petSupplies {
   width: 12rem;
-  height: 12rem;
+  height: 13rem;
   background-color: #FAEACD;
   margin: 0.5rem 0.5rem 0 0.5rem;
   border-radius: 0.5rem;

@@ -58,6 +58,7 @@
                     <div class="vetMed">
                         <img src="convertPageAsset/veterinarian.png" alt="Vet and Med">
                         <p>vet & med fees</p>
+                        <span>25 points</span>
                     </div>
                 </button>
 
@@ -65,6 +66,7 @@
                     <div class="petFood">
                         <img src="convertPageAsset/pet-food.png" alt="Pet Food">
                         <p>pet foods</p>
+                        <span>50 points</span>
                     </div>
                 </button>
 
@@ -72,6 +74,7 @@
                     <div class="petSupplies">
                         <img src="convertPageAsset/cone.png" alt="Pet Supplies">
                         <p>pet supplies</p>
+                        <span>75 points</span>
                     </div>
                 </button>
             </div>
