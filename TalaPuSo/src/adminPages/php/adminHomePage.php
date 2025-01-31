@@ -8,8 +8,8 @@ include ('../webPages/connect.php');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="adminHomePageAssets/Logo.png">
-    <link rel="stylesheet" href="adminHomePage.css">
+    <link rel="icon" href="../assets/adminHomePageAssets/Logo.png">
+    <link rel="stylesheet" href="../styles/adminHomePage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -21,10 +21,9 @@ include ('../webPages/connect.php');
     <div class="container">
         <div class="sideBar">
             <div class="logoClass">
-                <img src="adminHomePageAssets/Logo.png" alt="TalaPuso Logo">
+                <img src="../assets/adminHomePageAssets/Logo.png" alt="TalaPuso Logo">
             </div>
 
-            <a href="index.html">
                 <div class="profileContent">
                     <div class="imgClass"></div>
                     <div class="welcome">Welcome,<?php
@@ -36,36 +35,35 @@ include ('../webPages/connect.php');
                     }
                 }
                 ?></div>
-                <a href="logout.php">Log Out</a>
+                <a href="../php/logout.php">Log Out</a>
             </div>
-            </a>
 
             <div class="sidebarFunctions">
-            <a href="adminHomePage.php"><button>
+            <a href="../php/adminHomePage.php"><button>
                     <i class="fi fi-rr-home-heart"></i>
                     <span>Home</span>
                 </button>
                 </a>
 
-                <a href="adminDbSelect.php"><button>
+                <a href="../php/adminDbSelect.php"><button>
                     <i class="fi fi-rr-database"></i>
                     <span>Database</span>
                 </button>
                 </a>
 
-                <a href="adminNotif.php"><button>
+                <a href="../php/adminNotif.php"><button>
                     <i class="fi fi-rr-bell"></i>
                     <span>Notifications</span>
                 </button>
                 </a>
                 
-                <a href="adminReportPage.php"><button>
+                <a href="../php/adminReportPage.php"><button>
                     <i class="fi fi-rr-newspaper"></i>
                     <span>Reports</span>
                 </button>
                 </a>
 
-                <a href="adminInbox.php"><button>
+                <a href="../php/adminInbox.php"><button>
                     <i class="fi fi-rr-message-heart"></i>
                     <span>Inbox</span>
                 </button>
@@ -86,21 +84,21 @@ include ('../webPages/connect.php');
             
                 <div class="latestCards">
                     <div class="card">
-                        <img src="adminHomePageAssets/user1.jpg" alt="User Profile" class="userProfile">
+                        <img src="../assets/adminHomePageAssets/user1.jpg" alt="User Profile" class="userProfile">
                         <div class="cardContent">
                             <span class="userName">Chaewon Belmonte</span>
                             <p>Bacon is Injured</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="adminHomePageAssets/user2.jpg" alt="User Profile" class="userProfile">
+                        <img src="../assets/adminHomePageAssets/user2.jpg" alt="User Profile" class="userProfile">
                         <div class="cardContent">
                             <span class="userName">Haerin Magbanua</span>
                             <p>Pogi is Missing!</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="adminHomePageAssets/user1.jpg" alt="User Profile" class="userProfile">
+                        <img src="../assets/adminHomePageAssets/user1.jpg" alt="User Profile" class="userProfile">
                         <div class="cardContent">
                             <span class="userName">Chaewon Magbanua</span>
                             <p>Shadow is Sick</p>
@@ -113,56 +111,56 @@ include ('../webPages/connect.php');
                 <div class="overlayContent">
                     <button class="closeBtn" onclick="closeOverlay()">Close</button>
                     <div class="card">
-                        <img src="adminHomePageAssets/user1.jpg" alt="User Profile" class="userProfile">
+                        <img src="../assets/adminHomePageAssets/user1.jpg" alt="User Profile" class="userProfile">
                         <div class="cardContent">
                             <span class="userName">Chaewon Belmonte</span>
                             <p>Bacon is Injured</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="adminHomePageAssets/user2.jpg" alt="User Profile" class="userProfile">
+                        <img src="../assets/adminHomePageAssets/user2.jpg" alt="User Profile" class="userProfile">
                         <div class="cardContent">
                             <span class="userName">Haerin Magbanua</span>
                             <p>Pogi is Missing!</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="adminHomePageAssets/user1.jpg" alt="User Profile" class="userProfile">
+                        <img src="../assets/adminHomePageAssets/user1.jpg" alt="User Profile" class="userProfile">
                         <div class="cardContent">
                             <span class="userName">Chaewon Magbanua</span>
                             <p>Shadow is Sick</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="adminHomePageAssets/user1.jpg" alt="User Profile" class="userProfile">
+                        <img src="../assets/adminHomePageAssets/user1.jpg" alt="User Profile" class="userProfile">
                         <div class="cardContent">
                             <span class="userName">Chaewon Magbanua</span>
                             <p>Shadow is Sick</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="adminHomePageAssets/user1.jpg" alt="User Profile" class="userProfile">
+                        <img src="../assets/adminHomePageAssets/user1.jpg" alt="User Profile" class="userProfile">
                         <div class="cardContent">
                             <span class="userName">Chaewon Magbanua</span>
                             <p>Shadow is Sick</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="adminHomePageAssets/user2.jpg" alt="User Profile" class="userProfile">
+                        <img src="../assets/adminHomePageAssets/user2.jpg" alt="User Profile" class="userProfile">
                         <div class="cardContent">
                             <span class="userName">Haerin Magbanua</span>
                             <p>Pogi is Missing!</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="adminHomePageAssets/user1.jpg" alt="User Profile" class="userProfile">
+                        <img src="../assets/adminHomePageAssets/user1.jpg" alt="User Profile" class="userProfile">
                         <div class="cardContent">
                             <span class="userName">Chaewon Magbanua</span>
                             <p>Shadow is Sick</p>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="adminHomePageAssets/user2.jpg" alt="User Profile" class="userProfile">
+                        <img src="../assets/adminHomePageAssets/user2.jpg" alt="User Profile" class="userProfile">
                         <div class="cardContent">
                             <span class="userName">Haerin Magbanua</span>
                             <p>Pogi is Missing!</p>
@@ -177,7 +175,7 @@ include ('../webPages/connect.php');
                 </div>
                 <div class="databaseContent">
                     <div class="catClass">
-                        <img src="adminHomePageAssets/award.png" alt="Cat">
+                        <img src="../assets/adminHomePageAssets/award.png" alt="Cat">
                         <div class="catTitle">
                             <h2 class="numberCats">30</h2>
                             <p>cats</p>
@@ -185,7 +183,7 @@ include ('../webPages/connect.php');
                     </div>
 
                     <div class="dogClass">
-                        <img src="adminHomePageAssets/dog-food (2).png" alt="Cat">
+                        <img src="../assets/adminHomePageAssets/dog-food (2).png" alt="Cat">
                         <div class="dogTitle">
                             <h2 class="numberDogs">40</h2>
                             <p>dogs</p>
@@ -201,7 +199,7 @@ include ('../webPages/connect.php');
                 </div>
 
                 <div class="notifCard">
-                    <img src="adminHomePageAssets/user1.jpg" alt="User Profile" class="userProfile">
+                    <img src="../assets/adminHomePageAssets/user1.jpg" alt="User Profile" class="userProfile">
                     <div class="notifCaption">
                         <span class="Name">Chaewon Belmonte</span>
                         <span>reported a</span>
@@ -211,7 +209,7 @@ include ('../webPages/connect.php');
                 </div>
 
                 <div class="notifCard">
-                    <img src="adminHomePageAssets/user2.jpg" alt="User Profile" class="userProfile">
+                    <img src="../assets/adminHomePageAssets/user2.jpg" alt="User Profile" class="userProfile">
                     <div class="notifCaption">
                         <span class="Name">Haerin Magbanua</span>
                         <span>reported a</span>
@@ -224,6 +222,6 @@ include ('../webPages/connect.php');
             </div>
         </div>
     </div>
-    <script src="adminHomePage.js"></script>
+    <script src="../scripts/adminHomePage.js"></script>
 </body>
 </html>

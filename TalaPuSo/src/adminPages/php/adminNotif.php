@@ -31,36 +31,36 @@
                     }
                 }
                 ?></div>
-                <a href="logout.php">Log Out</a>
+                <a href="../php/logout.php">Log Out</a>
             </div>
             </a>
 
             <div class="sidebarFunctions">
-                <a href="adminHomePage.php"><button>
+                <a href="../php/adminHomePage.php"><button>
                     <i class="fi fi-rr-home-heart"></i>
                     <span>Home</span>
                 </button>
                 </a>
 
-                <a href="adminDbSelect.php"><button>
+                <a href="../php/adminDbSelect.php"><button>
                     <i class="fi fi-rr-database"></i>
                     <span>Database</span>
                 </button>
                 </a>
 
-                <a href="adminNotif.php"><button>
+                <a href="../php/adminNotif.php"><button>
                     <i class="fi fi-rr-bell"></i>
                     <span>Notifications</span>
                 </button>
                 </a>
                 
-                <a href="adminReportPage.php"><button>
+                <a href="../php/adminReportPage.php"><button>
                     <i class="fi fi-rr-newspaper"></i>
                     <span>Reports</span>
                 </button>
                 </a>
 
-                <a href="adminInbox.php"><button>
+                <a href="../php/adminInbox.php"><button>
                     <i class="fi fi-rr-message-heart"></i>
                     <span>Inbox</span>
                 </button>
@@ -82,7 +82,7 @@
 
                 <div id="newTab" class="tab-content active">
                     <div class="notifCard">
-                        <img src="adminAssets/user1.jpg" alt="User Profile" class="userProfile">
+                        <img src="../assets/adminAssets/user1.jpg" alt="User Profile" class="userProfile">
                         <div class="notifCaption">
                             <span class="Name">Chaewon Belmonte</span>
                             <span>reported a</span>
@@ -91,7 +91,7 @@
                         </div>
                     </div>
                     <div class="notifCard">
-                        <img src="adminAssets/user2.jpg" alt="User Profile" class="userProfile">
+                        <img src="../assets/adminAssets/user2.jpg" alt="User Profile" class="userProfile">
                         <div class="notifCaption">
                             <span class="Name">Haerin Magbanua</span>
                             <span>reported a</span>
@@ -103,7 +103,7 @@
 
                 <div id="unreadTab" class="tab-content">
                     <div class="notifCard">
-                        <img src="adminAssets/user2.jpg" alt="User Profile" class="userProfile">
+                        <img src="../assets/adminAssets/user2.jpg" alt="User Profile" class="userProfile">
                         <div class="notifCaption">
                             <span class="Name">Haerin Magbanua</span>
                             <span>reported a</span>
