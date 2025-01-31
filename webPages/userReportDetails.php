@@ -63,7 +63,7 @@
 
             <div class="upperDiv">
                 <div class="userClass">
-                    <img src="/admin/asset/user1.jpg" alt="User Profile" id="userProfile">
+                    <img src="userHomePageAssets/user1.jpg" alt="User Profile" id="userProfile">
                     <span class="Name">Chaewon Belmonte</span>
                 </div>
                 <p class="dateTimePost">January 2, 2025 11:59 PM</p>
