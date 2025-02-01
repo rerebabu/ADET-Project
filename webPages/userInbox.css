@@ -101,16 +101,26 @@ body {
 .mainContent {
   flex: 1;
   display: flex;
-  flex-direction: row;
-  padding: 1rem;
+  height: 100%;
 }
 
-.inbox {
-  width: 40%;
+.inbox,
+.chatbox {
+  flex: 1; /* Both sections take up equal space */
+  height: 100%; /* Match the full height of the parent */
   background-color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.inbox {
+  display: block; /* Show inbox by default */
+}
+
+.chatbox {
+  display: none; /* Hide chatbox initially */
 }
 
 .inbox h2 {
@@ -131,16 +141,6 @@ body {
 
 .messageItem:hover {
   background-color: #f9f9f9;
-}
-
-.chatbox {
-  flex: 1;
-  background-color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  display: none;
 }
 
 .chatHeader {
@@ -165,10 +165,20 @@ body {
 }
 
 .chatInput input {
-  flex: 1;
-  padding: 0.5rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  flex: 1; 
+  padding: 1rem; 
+  font-size: 1rem;
+  border: 1px solid #ddd; /* Keep the border style */
+  border-radius: 5px; /* Keep the rounded corners */
+  height: 2rem; 
+  outline: none; /* Removes default browser-defined focus outline */
+}
+
+/* Define custom focus styles */
+.chatInput input:focus {
+  border: 1px solid #22668D; /* Blue border when focused */
+  box-shadow: 0 0 5px rgba(34, 102, 141, 0.5); /* glow effect */
+  outline: none; /* Ensures no default focus outline appears */
 }
 
 .chatInput button {
